@@ -1,486 +1,0 @@
-TBigpond Menu Bar
-v7
-r0
-t308394547.142462
-cCheck dependencies
-cProcessInfoPlistFile "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Info.plist" Bigpond_Menu_Bar-Info.plist
-cCopyStringsFile "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
-cCpResource "build/Debug/Bigpond Menu Bar.app/Contents/Resources/BigPond.icns" BigPond.icns
-cCpResource "build/Debug/Bigpond Menu Bar.app/Contents/Resources/bp.png" bp.png
-cCpResource "build/Debug/Bigpond Menu Bar.app/Contents/Resources/fade.png" fade.png
-cCpResource "build/Debug/Bigpond Menu Bar.app/Contents/Resources/fail.png" fail.png
-cCpResource "build/Debug/Bigpond Menu Bar.app/Contents/Resources/ReleaseLog.txt" ReleaseLog.txt
-cCompileXIB /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/English.lproj/MainMenu.xib
-cCpResource "build/Debug/Bigpond Menu Bar.app/Contents/Resources/TODO.txt" TODO.txt
-cCpResource "build/Debug/Bigpond Menu Bar.app/Contents/Resources/dsa_pub.pem" dsa_pub.pem
-cProcessPCH /var/folders/gi/givpQmgOG6Wz8HXo4tDwpU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bigpond_Menu_Bar_Prefix-dwykmysorpvkoebyjtudvcxzhase/Bigpond_Menu_Bar_Prefix.pch.gch Bigpond_Menu_Bar_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cProcessPCH /var/folders/gi/givpQmgOG6Wz8HXo4tDwpU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bigpond_Menu_Bar_Prefix-cyafdzoiyomnwghjmsjgfhuuoxxc/Bigpond_Menu_Bar_Prefix.pch.gch Bigpond_Menu_Bar_Prefix.pch normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC "build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/main.o" /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/Bigpond_Menu_BarAppDelegate.o" /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Bigpond_Menu_BarAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/LoginItemsAE.o" /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/LoginItemsAE.c normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC "build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/UsageMeter.o" /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/UsageMeter.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cLd "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/MacOS/Bigpond Menu Bar" normal x86_64
-cPBXCp "build/Debug/Bigpond Menu Bar.app/Contents/Frameworks/Sparkle.framework" Sparkle.framework
-cPhaseScriptExecution "Run Script" "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Script-927CB47312616ECA0024DAD1.sh"
-cTouch "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app"
-
-N/Developer/SDKs/MacOSX10.5.sdk
-c000000004B7E366000000000000000EE
-t1266562656
-s238
-
-N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h
-c0000000047BAEC060000000000000476
-t1203432454
-s1142
-
-N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h
-c000000004864BE3E00000000000005D7
-t1214561854
-s1495
-
-N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
-c0000000040C4AA6800000000000001E5
-t1086630504
-s485
-
-N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFDate.h
-c00000000486499680000000000000A09
-t1214552424
-s2569
-
-N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004864A1C900000000000012EE
-t1214554569
-s4846
-
-N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Security.framework/Security
-c000000004B760CDB000000000006676C
-t1266027739
-s419692
-
-N/Developer/SDKs/MacOSX10.5.sdk/usr/include/string.h
-c0000000047BA99320000000000001731
-t1203411250
-s5937
-
-N/System/Library/Frameworks/Cocoa.framework/Cocoa
-c000000004A1F2D63000000000000A5E0
-t1243557219
-s42464
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/BigPond.icns
-c000000004CB1827E0000000000030B13
-t1286701694
-s199443
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Bigpond_Menu_BarAppDelegate.h
-c000000004CB1827E0000000000000EAB
-t1286701694
-s3755
-i<Cocoa/Cocoa.h>
-i"LoginItemsAE.h"
-i"UsageMeter.h"
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Bigpond_Menu_BarAppDelegate.m
-c000000004CB1827E00000000000069AA
-t1286701694
-s27050
-i"Bigpond_Menu_BarAppDelegate.h"
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Bigpond_Menu_Bar_Prefix.pch
-c000000004CB1827E00000000000000A3
-t1286701694
-s163
-i<Cocoa/Cocoa.h>
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/English.lproj/InfoPlist.strings
-c000000004CB1827E000000000000002D
-t1286701694
-s45
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/English.lproj/MainMenu.xib
-c000000004CB1827E000000000001EFC5
-t1286701694
-s126917
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/LoginItemsAE.c
-c000000004CB1827E0000000000005576
-t1286701694
-s21878
-i"LoginItemsAE.h"
-i<Carbon/Carbon.h>
-i<string.h>
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/LoginItemsAE.h
-c000000004CB1827E0000000000001085
-t1286701694
-s4229
-i<ApplicationServices/ApplicationServices.h>
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/ReleaseLog.txt
-c000000004CB1827E000000000000003B
-t1286701694
-s59
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Sparkle.framework
-c000000004CB1827E00000000000000EE
-t1286701694
-s238
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Sparkle.framework/Sparkle
-c000000004CB1827E00000000000712B4
-t1286701694
-s463540
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/TODO.txt
-c000000004CB1827E0000000000000000
-t1286701694
-s0
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/UsageMeter.h
-c000000004CB1827E0000000000000199
-t1286701694
-s409
-i<Foundation/Foundation.h>
-i<CoreFoundation/CFDate.h>
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/UsageMeter.m
-c000000004CB1827E0000000000003802
-t1286701694
-s14338
-i"UsageMeter.h"
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/bp.png
-c000000004CB1827E00000000000001AF
-t1286701694
-s431
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/Bigpond Menu Bar.LinkFileList
-c000000004CB1829F0000000000000259
-t1286701727
-s601
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/Bigpond_Menu_BarAppDelegate.o
-t1286701744
-s132884
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/LoginItemsAE.o
-t1286701745
-s32956
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/UsageMeter.o
-t1286701745
-s38540
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/main.o
-t1286701744
-s5016
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Script-927CB47312616ECA0024DAD1.sh
-c000000004CB1829F0000000000000528
-t1286701727
-s1320
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app
-t1286701747
-s102
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Frameworks/Sparkle.framework
-t1286701746
-s204
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Info.plist
-t1286701747
-s1329
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/MacOS/Bigpond Menu Bar
-t1286701746
-s99424
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/PkgInfo
-t1286701727
-s8
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources/BigPond.icns
-t1286701727
-s199443
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources/English.lproj/InfoPlist.strings
-t1286701727
-s92
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources/English.lproj/MainMenu.nib
-t1286701728
-s22661
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources/ReleaseLog.txt
-t1286701727
-s59
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources/TODO.txt
-t1286701727
-s0
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources/bp.png
-t1286701727
-s431
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources/dsa_pub.pem
-t1286701727
-s1178
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources/fade.png
-t1286701727
-s467
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources/fail.png
-t1286701727
-s609
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/dsa_pub.pem
-c000000004CB1827E000000000000049A
-t1286701694
-s1178
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/fade.png
-c000000004CB1827E00000000000001D3
-t1286701694
-s467
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/fail.png
-c000000004CB1827E0000000000000261
-t1286701694
-s609
-
-N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/main.m
-c000000004CB1827E00000000000000F8
-t1286701694
-s248
-i<Cocoa/Cocoa.h>
-
-N/var/folders/gi/givpQmgOG6Wz8HXo4tDwpU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bigpond_Menu_Bar_Prefix-cyafdzoiyomnwghjmsjgfhuuoxxc/Bigpond_Menu_Bar_Prefix.pch.gch
-t1286701728
-s2195824
-
-N/var/folders/gi/givpQmgOG6Wz8HXo4tDwpU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bigpond_Menu_Bar_Prefix-dwykmysorpvkoebyjtudvcxzhase/Bigpond_Menu_Bar_Prefix.pch.gch
-t1286701744
-s51179824
-
-NBigpond_Menu_Bar-Info.plist
-c000000004CB1827E0000000000000550
-t1286701694
-s1360
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies308394527#308394527#0(0"0(0#1#0"8611886368#0"0#
-
-CCompileC "build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/Bigpond_Menu_BarAppDelegate.o" /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Bigpond_Menu_BarAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s308394544.331374
-e308394544.986581
-r1
-xCompileC
-xbuild/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/Bigpond_Menu_BarAppDelegate.o
-x/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Bigpond_Menu_BarAppDelegate.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@91"Compile /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Bigpond_Menu_BarAppDelegate.m308394544#308394545#0(0"0(0#0#83"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Bigpond_Menu_BarAppDelegate.m8612932832#1911"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-generated-files.hmap" "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-own-target-headers.hmap" "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-all-target-headers.hmap" -iquote "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-project-headers.hmap" -F/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug -F/Users/Anthony/Developer/Programs/BigPond-Usage-Meter -I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/include "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/DerivedSources/x86_64" "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/DerivedSources" -include /var/folders/gi/givpQmgOG6Wz8HXo4tDwpU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bigpond_Menu_Bar_Prefix-dwykmysorpvkoebyjtudvcxzhase/Bigpond_Menu_Bar_Prefix.pch -c /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Bigpond_Menu_BarAppDelegate.m -o "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/Bigpond_Menu_BarAppDelegate.o"0#
-
-CCompileC "build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/LoginItemsAE.o" /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/LoginItemsAE.c normal x86_64 c com.apple.compilers.gcc.4_2
-s308394544.769769
-e308394545.632084
-r1
-xCompileC
-xbuild/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/LoginItemsAE.o
-x/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/LoginItemsAE.c
-xnormal
-xx86_64
-xc
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@76"Compile /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/LoginItemsAE.c308394544#308394545#0(0"0(0#0#68"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/LoginItemsAE.c8618103040#1871"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-generated-files.hmap" "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-own-target-headers.hmap" "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-all-target-headers.hmap" -iquote "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-project-headers.hmap" -F/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug -F/Users/Anthony/Developer/Programs/BigPond-Usage-Meter -I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/include "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/DerivedSources/x86_64" "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/DerivedSources" -include /var/folders/gi/givpQmgOG6Wz8HXo4tDwpU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bigpond_Menu_Bar_Prefix-cyafdzoiyomnwghjmsjgfhuuoxxc/Bigpond_Menu_Bar_Prefix.pch -c /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/LoginItemsAE.c -o "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/LoginItemsAE.o"0#
-
-CCompileC "build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/UsageMeter.o" /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/UsageMeter.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s308394544.986694
-e308394545.238106
-r1
-xCompileC
-xbuild/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/UsageMeter.o
-x/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/UsageMeter.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@74"Compile /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/UsageMeter.m308394545#308394545#0(0"0(0#0#66"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/UsageMeter.m8617305536#1877"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-generated-files.hmap" "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-own-target-headers.hmap" "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-all-target-headers.hmap" -iquote "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-project-headers.hmap" -F/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug -F/Users/Anthony/Developer/Programs/BigPond-Usage-Meter -I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/include "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/DerivedSources/x86_64" "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/DerivedSources" -include /var/folders/gi/givpQmgOG6Wz8HXo4tDwpU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bigpond_Menu_Bar_Prefix-dwykmysorpvkoebyjtudvcxzhase/Bigpond_Menu_Bar_Prefix.pch -c /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/UsageMeter.m -o "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/UsageMeter.o"0#
-
-CCompileC "build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/main.o" /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s308394544.330078
-e308394544.769661
-r1
-xCompileC
-xbuild/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/main.o
-x/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/main.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@68"Compile /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/main.m308394544#308394544#0(0"0(0#0#60"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/main.m8604263488#1865"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-generated-files.hmap" "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-own-target-headers.hmap" "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-all-target-headers.hmap" -iquote "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-project-headers.hmap" -F/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug -F/Users/Anthony/Developer/Programs/BigPond-Usage-Meter -I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/include "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/DerivedSources/x86_64" "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/DerivedSources" -include /var/folders/gi/givpQmgOG6Wz8HXo4tDwpU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bigpond_Menu_Bar_Prefix-dwykmysorpvkoebyjtudvcxzhase/Bigpond_Menu_Bar_Prefix.pch -c /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/main.m -o "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/main.o"0#
-
-CCompileXIB /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/English.lproj/MainMenu.xib
-s308394527.501449
-e308394528.230191
-r1
-xCompileXIB
-x/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/English.lproj/MainMenu.xib
-o/* com.apple.ibtool.document.notices */
-o/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/English.lproj/MainMenu.xib:617: note: This view is clipping its content.
-o/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/English.lproj/MainMenu.xib:752: note: This view is clipping its content.
-o/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/English.lproj/MainMenu.xib:794: note: This view is clipping its content.
-lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib308394527#308394528#0(421"/* com.apple.ibtool.document.notices *//Users/Anthony/Developer/Programs/BigPond-Usage-Meter/English.lproj/MainMenu.xib:617: note: This view is clipping its content./Users/Anthony/Developer/Programs/BigPond-Usage-Meter/English.lproj/MainMenu.xib:752: note: This view is clipping its content./Users/Anthony/Developer/Programs/BigPond-Usage-Meter/English.lproj/MainMenu.xib:794: note: This view is clipping its content.3(13@34"This view is clipping its content.308394528#18446744073709551615#0#0(6@80"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/English.lproj/MainMenu.xib308394494#617#0#617#0#0"0(13@34"This view is clipping its content.308394528#18446744073709551615#0#0(6@80"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/English.lproj/MainMenu.xib308394494#752#0#752#0#0"0(13@34"This view is clipping its content.308394528#18446744073709551615#0#0(6@80"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/English.lproj/MainMenu.xib308394494#794#0#794#0#0"0(0#0#80"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/English.lproj/MainMenu.xib8616325408#420"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources/English.lproj/MainMenu.nib" /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/English.lproj/MainMenu.xib --sdk /Developer/SDKs/MacOSX10.5.sdk0#
-
-CCopyStringsFile "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
-s308394527.468860
-e308394527.873710
-r1
-xCopyStringsFile
-x/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources/English.lproj/InfoPlist.strings
-xEnglish.lproj/InfoPlist.strings
-lSLF07#2@36"Copy English.lproj/InfoPlist.strings308394527#308394527#0(0"0(0#0#85"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/English.lproj/InfoPlist.strings8619495168#406"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources/English.lproj"0#
-
-CCpResource "build/Debug/Bigpond Menu Bar.app/Contents/Resources/BigPond.icns" BigPond.icns
-s308394527.469950
-e308394527.636632
-r1
-xCpResource
-xbuild/Debug/Bigpond Menu Bar.app/Contents/Resources/BigPond.icns
-xBigPond.icns
-lSLF07#2@17"Copy BigPond.icns308394527#308394527#0(0"0(0#0#66"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/BigPond.icns8618034720#384"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/BigPond.icns "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources"0#
-
-CCpResource "build/Debug/Bigpond Menu Bar.app/Contents/Resources/ReleaseLog.txt" ReleaseLog.txt
-s308394527.499586
-e308394527.561631
-r1
-xCpResource
-xbuild/Debug/Bigpond Menu Bar.app/Contents/Resources/ReleaseLog.txt
-xReleaseLog.txt
-lSLF07#2@19"Copy ReleaseLog.txt308394527#308394527#0(0"0(0#0#68"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/ReleaseLog.txt8617151200#386"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/ReleaseLog.txt "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources"0#
-
-CCpResource "build/Debug/Bigpond Menu Bar.app/Contents/Resources/TODO.txt" TODO.txt
-s308394527.873803
-e308394527.895876
-r1
-xCpResource
-xbuild/Debug/Bigpond Menu Bar.app/Contents/Resources/TODO.txt
-xTODO.txt
-lSLF07#2@13"Copy TODO.txt308394527#308394527#0(0"0(0#0#62"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/TODO.txt8616880288#380"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/TODO.txt "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources"0#
-
-CCpResource "build/Debug/Bigpond Menu Bar.app/Contents/Resources/bp.png" bp.png
-s308394527.494334
-e308394527.544814
-r1
-xCpResource
-xbuild/Debug/Bigpond Menu Bar.app/Contents/Resources/bp.png
-xbp.png
-lSLF07#2@11"Copy bp.png308394527#308394527#0(0"0(0#0#60"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/bp.png8617676608#378"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/bp.png "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources"0#
-
-CCpResource "build/Debug/Bigpond Menu Bar.app/Contents/Resources/dsa_pub.pem" dsa_pub.pem
-s308394527.875636
-e308394527.885182
-r1
-xCpResource
-xbuild/Debug/Bigpond Menu Bar.app/Contents/Resources/dsa_pub.pem
-xdsa_pub.pem
-lSLF07#2@16"Copy dsa_pub.pem308394527#308394527#0(0"0(0#0#65"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/dsa_pub.pem8621638848#383"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/dsa_pub.pem "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources"0#
-
-CCpResource "build/Debug/Bigpond Menu Bar.app/Contents/Resources/fade.png" fade.png
-s308394527.496115
-e308394527.548418
-r1
-xCpResource
-xbuild/Debug/Bigpond Menu Bar.app/Contents/Resources/fade.png
-xfade.png
-lSLF07#2@13"Copy fade.png308394527#308394527#0(0"0(0#0#62"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/fade.png8617498368#380"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/fade.png "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources"0#
-
-CCpResource "build/Debug/Bigpond Menu Bar.app/Contents/Resources/fail.png" fail.png
-s308394527.497826
-e308394527.538964
-r1
-xCpResource
-xbuild/Debug/Bigpond Menu Bar.app/Contents/Resources/fail.png
-xfail.png
-lSLF07#2@13"Copy fail.png308394527#308394527#0(0"0(0#0#62"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/fail.png8617330528#380"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/fail.png "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Resources"0#
-
-CLd "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/MacOS/Bigpond Menu Bar" normal x86_64
-s308394545.632221
-e308394546.614264
-r1
-xLd
-x/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/MacOS/Bigpond Menu Bar
-xnormal
-xx86_64
-lSLF07#2@123"Link /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/MacOS/Bigpond Menu Bar308394545#308394546#0(0"0(0#0#0"8617330112#761"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug -F/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug -F/Users/Anthony/Developer/Programs/BigPond-Usage-Meter -filelist "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/Bigpond Menu Bar.LinkFileList" -mmacosx-version-min=10.5 -framework Cocoa -framework Security -framework Sparkle -o "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/MacOS/Bigpond Menu Bar"0#
-
-CPBXCp "build/Debug/Bigpond Menu Bar.app/Contents/Frameworks/Sparkle.framework" Sparkle.framework
-s308394546.614437
-e308394546.690775
-r1
-xPBXCp
-xbuild/Debug/Bigpond Menu Bar.app/Contents/Frameworks/Sparkle.framework
-xSparkle.framework
-lSLF07#2@22"Copy Sparkle.framework308394546#308394546#0(0"0(0#0#71"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Sparkle.framework8600970304#390"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Sparkle.framework "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Frameworks"0#
-
-CPhaseScriptExecution "Run Script" "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Script-927CB47312616ECA0024DAD1.sh"
-s308394546.690892
-e308394547.138887
-r1
-xPhaseScriptExecution
-xRun Script
-x/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Script-927CB47312616ECA0024DAD1.sh
-oCFBundleVersion has revision number 6613cfd in /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Info.plist
-lSLF07#2@36"Run custom shell script 'Run Script'308394546#308394547#0(154"CFBundleVersion has revision number 6613cfd in /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Info.plist1(13@154"CFBundleVersion has revision number 6613cfd in /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Info.plist308394547#0#154#0(1@0"0(0#0#0"8616895072#17299"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER Anthony    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS x86_64    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build    setenv BUILD_ROOT /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug    setenv CACHE_ROOT /var/folders/gi/givpQmgOG6Wz8HXo4tDwpU+++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/gi/givpQmgOG6Wz8HXo4tDwpU+++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/JavaClasses"    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app"    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/gi/givpQmgOG6Wz8HXo4tDwpU+++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug    setenv CONFIGURATION_TEMP_DIR "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug"    setenv CONTENTS_FOLDER_PATH "Bigpond Menu Bar.app/Contents"    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH x86_64    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/DerivedSources"    setenv DERIVED_FILE_DIR "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/DerivedSources"    setenv DERIVED_SOURCES_DIR "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/DerivedSources"    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH /Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT "/tmp/Bigpond Menu Bar.dst"    setenv DWARF_DSYM_FILE_NAME "Bigpond Menu Bar.app.dSYM"    setenv DWARF_DSYM_FOLDER_PATH /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH "Bigpond Menu Bar.app/Contents/Executables"    setenv EXECUTABLE_FOLDER_PATH "Bigpond Menu Bar.app/Contents/MacOS"    setenv EXECUTABLE_NAME "Bigpond Menu Bar"    setenv EXECUTABLE_PATH "Bigpond Menu Bar.app/Contents/MacOS/Bigpond Menu Bar"    setenv FILE_LIST "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects/LinkFileList"    setenv FIXED_FILES_DIR "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/FixedFiles"    setenv FRAMEWORKS_FOLDER_PATH "Bigpond Menu Bar.app/Contents/Frameworks"    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug\"  \"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter\""    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME "Bigpond Menu Bar.app"    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD gnu99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_FIX_AND_CONTINUE YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_MODEL_TUNING G5    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER Bigpond_Menu_Bar_Prefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE Bigpond_Menu_Bar-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH "Bigpond Menu Bar.app/Contents/Info.plist"    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH /InfoPlist.strings    setenv INSTALL_DIR "/tmp/Bigpond Menu Bar.dst/Users/Anthony/Applications"    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER Anthony    setenv INSTALL_PATH /Users/Anthony/Applications    setenv INSTALL_ROOT "/tmp/Bigpond Menu Bar.dst"    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH "Bigpond Menu Bar.app/Contents/Resources/Java"    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-LinkMap-normal-x86_64.txt"    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_x86_64 "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal/x86_64/Bigpond Menu Bar.LinkFileList"    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv MAC_OS_X_VERSION_ACTUAL 1064    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0604    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects"    setenv OBJECT_FILE_DIR_normal "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Objects-normal"    setenv OBJROOT /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build    setenv ONLY_ACTIVE_ARCH YES    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH "Bigpond Menu Bar.app/Contents/pbdevelopment.plist"    setenv PFE_FILE_C_DIALECTS "c objective-c"    setenv PKGINFO_FILE_PATH "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/PkgInfo"    setenv PKGINFO_PATH "Bigpond Menu Bar.app/Contents/PkgInfo"    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH "Bigpond Menu Bar.app/Contents/PlugIns"    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/PrefixHeaders"    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH "Bigpond Menu Bar.app/Contents/PrivateHeaders"    setenv PRODUCT_NAME "Bigpond Menu Bar"    setenv PRODUCT_SETTINGS_PATH /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Bigpond_Menu_Bar-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT "Bigpond Menu Bar"    setenv PROJECT_DERIVED_FILE_DIR "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/DerivedSources"    setenv PROJECT_DIR /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    setenv PROJECT_FILE_PATH "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Bigpond Menu Bar.xcodeproj"    setenv PROJECT_NAME "Bigpond Menu Bar"    setenv PROJECT_TEMP_DIR "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build"    setenv PUBLIC_HEADERS_FOLDER_PATH "Bigpond Menu Bar.app/Contents/Headers"    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/ResourceManagerResources"    setenv REZ_OBJECTS_DIR "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/ResourceManagerResources/Objects"    setenv REZ_SEARCH_PATHS "\"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH "Bigpond Menu Bar.app/Contents/Resources/Scripts"    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/SDKs/MacOSX10.5.sdk    setenv SDK_DIR /Developer/SDKs/MacOSX10.5.sdk    setenv SDK_NAME macosx10.5    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH "Bigpond Menu Bar.app/Contents/SharedFrameworks"    setenv SHARED_PRECOMPS_DIR /var/folders/gi/givpQmgOG6Wz8HXo4tDwpU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH "Bigpond Menu Bar.app/Contents/SharedSupport"    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    setenv SRCROOT /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SYMBOL_REPOSITORY_DIR "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/SymbolRepositories"    setenv SYMROOT /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME "Bigpond Menu Bar"    setenv TARGET_BUILD_DIR /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug    setenv TARGET_NAME "Bigpond Menu Bar"    setenv TARGET_TEMP_DIR "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build"    setenv TEMP_DIR "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build"    setenv TEMP_FILES_DIR "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build"    setenv TEMP_FILE_DIR "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build"    setenv TEMP_ROOT /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH "Bigpond Menu Bar.app/Contents/Resources"    setenv UNSTRIPPED_PRODUCT NO    setenv USER Anthony    setenv USER_APPS_DIR /Users/Anthony/Applications    setenv USER_LIBRARY_DIR /Users/Anthony/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH "Bigpond Menu Bar.app/Contents/version.plist"    setenv VERSION_INFO_BUILDER Anthony    setenv VERSION_INFO_FILE "Bigpond Menu Bar_vers.c"    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:Bigpond Menu Bar  PROJECT:Bigpond Menu Bar-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME "Bigpond Menu Bar.app"    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0323    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    /bin/sh -c "\"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Script-927CB47312616ECA0024DAD1.sh\""0#
-
-CProcessInfoPlistFile "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Info.plist" Bigpond_Menu_Bar-Info.plist
-s308394527.446103
-e308394527.468756
-r1
-xProcessInfoPlistFile
-x/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Info.plist
-xBigpond_Menu_Bar-Info.plist
-lSLF07#2@35"Process Bigpond_Menu_Bar-Info.plist308394527#308394527#0(0"0(0#0#81"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Bigpond_Menu_Bar-Info.plist8604268032#386"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    builtin-infoPlistUtility Bigpond_Menu_Bar-Info.plist -genpkginfo "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/PkgInfo" -expandbuildsettings -platform macosx -o "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app/Contents/Info.plist"0#
-
-CProcessPCH /var/folders/gi/givpQmgOG6Wz8HXo4tDwpU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bigpond_Menu_Bar_Prefix-cyafdzoiyomnwghjmsjgfhuuoxxc/Bigpond_Menu_Bar_Prefix.pch.gch Bigpond_Menu_Bar_Prefix.pch normal x86_64 c com.apple.compilers.gcc.4_2
-s308394528.231933
-e308394529.122367
-r1
-xProcessPCH
-x/var/folders/gi/givpQmgOG6Wz8HXo4tDwpU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bigpond_Menu_Bar_Prefix-cyafdzoiyomnwghjmsjgfhuuoxxc/Bigpond_Menu_Bar_Prefix.pch.gch
-xBigpond_Menu_Bar_Prefix.pch
-xnormal
-xx86_64
-xc
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@38"Precompile Bigpond_Menu_Bar_Prefix.pch308394528#308394529#0(0"0(0#0#81"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Bigpond_Menu_Bar_Prefix.pch8622022336#1735"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-generated-files.hmap" "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-own-target-headers.hmap" "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-all-target-headers.hmap" -iquote "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-project-headers.hmap" -F/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug -F/Users/Anthony/Developer/Programs/BigPond-Usage-Meter -I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/include "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/DerivedSources/x86_64" "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/DerivedSources" -c /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Bigpond_Menu_Bar_Prefix.pch -o /var/folders/gi/givpQmgOG6Wz8HXo4tDwpU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bigpond_Menu_Bar_Prefix-cyafdzoiyomnwghjmsjgfhuuoxxc/Bigpond_Menu_Bar_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/gi/givpQmgOG6Wz8HXo4tDwpU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bigpond_Menu_Bar_Prefix-dwykmysorpvkoebyjtudvcxzhase/Bigpond_Menu_Bar_Prefix.pch.gch Bigpond_Menu_Bar_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s308394528.230427
-e308394544.329851
-r1
-xProcessPCH
-x/var/folders/gi/givpQmgOG6Wz8HXo4tDwpU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bigpond_Menu_Bar_Prefix-dwykmysorpvkoebyjtudvcxzhase/Bigpond_Menu_Bar_Prefix.pch.gch
-xBigpond_Menu_Bar_Prefix.pch
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@38"Precompile Bigpond_Menu_Bar_Prefix.pch308394528#308394544#0(0"0(0#0#81"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Bigpond_Menu_Bar_Prefix.pch8616489664#1745"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-generated-files.hmap" "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-own-target-headers.hmap" "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-all-target-headers.hmap" -iquote "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/Bigpond Menu Bar-project-headers.hmap" -F/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug -F/Users/Anthony/Developer/Programs/BigPond-Usage-Meter -I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/include "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/DerivedSources/x86_64" "-I/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Bigpond Menu Bar.build/DerivedSources" -c /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Bigpond_Menu_Bar_Prefix.pch -o /var/folders/gi/givpQmgOG6Wz8HXo4tDwpU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bigpond_Menu_Bar_Prefix-dwykmysorpvkoebyjtudvcxzhase/Bigpond_Menu_Bar_Prefix.pch.gch0#
-
-CTouch "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app"
-s308394547.138977
-e308394547.142415
-r1
-xTouch
-x/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app
-lSLF07#2@92"Touch /Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app308394547#308394547#0(0"0(0#0#0"8617700512#172"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    /usr/bin/touch -c "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Debug/Bigpond Menu Bar.app"0#
-

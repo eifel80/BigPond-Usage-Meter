@@ -1,2 +1,0 @@
-10/05/16 1.2, widget: 2.2
-10/10/10 release source code: GPL
