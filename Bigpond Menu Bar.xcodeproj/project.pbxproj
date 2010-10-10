@@ -220,6 +220,7 @@
 				927CB46A12616B380024DAD1 /* CopyFiles */,
 				92C6F79B1261D7D300E1259F /* Commit */,
 				927CB47312616ECA0024DAD1 /* Set Version */,
+				92C6F7F51261DBED00E1259F /* Sign, Upload, Publish */,
 			);
 			buildRules = (
 			);
@@ -308,7 +309,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "SHOULDCOMMIT = TRUE\n[ $BUILD_STYLE = Distribution ] || { echo Distribution target requires \"'Release'\" build style; false; }\n\n/usr/local/bin/git commit -a -m \"Distribution Build\"\n/usr/local/bin/git push";
+			shellScript = "if [ $BUILD_STYLE = Distribution ]; then\n\t/usr/local/bin/git commit -a -m \"Distribution Build\";/usr/local/bin/git push;\nfi";
+		};
+		92C6F7F51261DBED00E1259F /* Sign, Upload, Publish */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Sign, Upload, Publish";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "if [ $BUILD_STYLE = Distribution ]; then\nset -o errexit\n\n[ $BUILD_STYLE = Distribution ] || { echo Distribution target requires \"'Release'\" build style; false; }\n\nVERSION=$(defaults read \"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Info\" CFBundleVersion)\nDOWNLOAD_BASE_URL=\"http://graph.tk/app\"\nRELEASENOTES_URL=\"http://url3.tk/mbapp/\"\nARCHIVE_FILENAME=\"$PROJECT_NAME $VERSION.zip\"\nDOWNLOAD_URL=\"$DOWNLOAD_BASE_URL/$ARCHIVE_FILENAME\"\nKEYCHAIN_PRIVKEY_NAME=\"Sparkle Private Key 1\"\n\nWD=$PWD\ncd \"$BUILT_PRODUCTS_DIR\"\nrm -f \"$PROJECT_NAME\"*.zip\nditto -ck --keepParent \"$PROJECT_NAME.app\" \"$ARCHIVE_FILENAME\"\n\nSIZE=$(stat -f %z \"$ARCHIVE_FILENAME\")\nPUBDATE=$(LC_TIME=en_US date +\"%a, %d %b %G %T %z\")\nSIGNATURE=$(\n\topenssl dgst -sha1 -binary < \"$ARCHIVE_FILENAME\" \\\n\t| openssl dgst -dss1 -sign <(security find-generic-password -g -s \"$KEYCHAIN_PRIVKEY_NAME\" 2>&1 1>/dev/null | perl -pe '($_) = /\"(.+)\"/; s/\\\\012/\\n/g' | perl -MXML::LibXML -e 'print XML::LibXML->new()->parse_file(\"-\")->findvalue(q(//string[preceding-sibling::key[1] = \"NOTE\"]))') \\\n\t| openssl enc -base64\n)\n\n[ $SIGNATURE ] || { echo Unable to load signing private key with name \"'$KEYCHAIN_PRIVKEY_NAME'\" from keychain; false; }\n\ncat|pbcopy <<EOF\n\t\t<item>\n\t\t\t<title>Version $VERSION</title>\n\t\t\t<sparkle:releaseNotesLink>$RELEASENOTES_URL</sparkle:releaseNotesLink>\n\t\t\t<pubDate>$PUBDATE</pubDate>\n\t\t\t<enclosure\n\t\t\t\turl=\"$DOWNLOAD_URL\"\n\t\t\t\tsparkle:version=\"$VERSION\"\n\t\t\t\ttype=\"application/octet-stream\"\n\t\t\t\tlength=\"$SIZE\"\n\t\t\t\tsparkle:dsaSignature=\"$SIGNATURE\"\n\t\t\t/>\n\t\t</item>\nEOF\n\n\n\ncat <<EOF\n\t\t<item>\n\t\t\t<title>Version $VERSION</title>\n\t\t\t<sparkle:releaseNotesLink>$RELEASENOTES_URL</sparkle:releaseNotesLink>\n\t\t\t<pubDate>$PUBDATE</pubDate>\n\t\t\t<enclosure\n\t\t\t\turl=\"$DOWNLOAD_URL\"\n\t\t\t\tsparkle:version=\"$VERSION\"\n\t\t\t\ttype=\"application/octet-stream\"\n\t\t\t\tlength=\"$SIZE\"\n\t\t\t\tsparkle:dsaSignature=\"$SIGNATURE\"\n\t\t\t/>\n\t\t</item>\nEOF\necho put above into http://url3.tk/mbapp/?update\n\nopen http://url3.tk/mbapp/?update\n\necho Uploading to graph.tk server...\n\nKEYCHAIN_FTP_USERNAME_NAME=\"graph.tk username\"\nKEYCHAIN_FTP_PASSWORD_NAME=\"graph.tk password\"\n\n\n\nFTPU=$(security find-generic-password -g -s \"$KEYCHAIN_FTP_USERNAME_NAME\" 2>&1 1>/dev/null | perl -pe '($_) = /\"(.+)\"/; s/\\\\012/\\n/g' | perl -MXML::LibXML -e 'print XML::LibXML->new()->parse_file(\"-\")->findvalue(q(//string[preceding-sibling::key[1] = \"NOTE\"]))')\n\nFTPP=$(security find-generic-password -g -s \"$KEYCHAIN_FTP_PASSWORD_NAME\" 2>&1 1>/dev/null | perl -pe '($_) = /\"(.+)\"/; s/\\\\012/\\n/g' | perl -MXML::LibXML -e 'print XML::LibXML->new()->parse_file(\"-\")->findvalue(q(//string[preceding-sibling::key[1] = \"NOTE\"]))')\n\n\n\nFTPS=\"graph.tk\" # remote ftp server\nFTPF=\"/public_html/app/\" # remote ftp server directory for $FTPU & $FTPP\nLOCALD=\"$ARCHIVE_FILENAME\"\nncftpput -m -u $FTPU -p $FTPP $FTPS  $FTPF \"$LOCALD\"\necho Uploaded.\n\n\n\n\n\n\n#echo cd \"\\\"$PWD\\\"\"\n#echo \"$HOME/Sites/upload.sh\" \"\\\"$ARCHIVE_FILENAME\\\"\"\n#echo scp \"'$HOME/svn/my-cool-app/build/Release/$ARCHIVE_FILENAME'\" www.example.com:download/\n#echo scp \"'$WD/appcast.xml'\" www.example.com:web/software/my-cool-app/appcast.xml\n\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
