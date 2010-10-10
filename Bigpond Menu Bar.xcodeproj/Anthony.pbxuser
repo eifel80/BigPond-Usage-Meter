@@ -15,9 +15,9 @@
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Distribution;
+		activeBuildConfigurationName = Release;
 		activeExecutable = 92133E2F1261BA1C00914ACD /* Bigpond Menu Bar */;
-		activeTarget = 92C6F8161261DEBD00E1259F /* test */;
+		activeTarget = 8D1107260486CEB800E47090 /* Bigpond Menu Bar */;
 		codeSenseManager = 92133E451261BA3500914ACD /* Code sense */;
 		executables = (
 			92133E2F1261BA1C00914ACD /* Bigpond Menu Bar */,
@@ -105,6 +105,7 @@
 			92C6F7C01261D9DF00E1259F = 92C6F7C01261D9DF00E1259F /* PBXTextBookmark */;
 			92C6F7C11261D9DF00E1259F = 92C6F7C11261D9DF00E1259F /* PBXTextBookmark */;
 			92C6F8291261DF4D00E1259F = 92C6F8291261DF4D00E1259F /* PBXTextBookmark */;
+			92C6F8771261E09F00E1259F /* PBXTextBookmark */ = 92C6F8771261E09F00E1259F /* PBXTextBookmark */;
 		};
 		sourceControlManager = 92133E441261BA3500914ACD /* Source Control */;
 		userBuildSettings = {
@@ -212,10 +213,17 @@
 		rLoc = 0;
 		rType = 1;
 	};
-	92C6F8161261DEBD00E1259F /* test */ = {
-		activeExec = 0;
-	};
 	92C6F8291261DF4D00E1259F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3F00F4B6AF500CF3369 /* Bigpond_Menu_Bar_Prefix.pch */;
+		name = "Bigpond_Menu_Bar_Prefix.pch: 8";
+		rLen = 0;
+		rLoc = 163;
+		rType = 0;
+		vrLen = 163;
+		vrLoc = 0;
+	};
+	92C6F8771261E09F00E1259F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 256AC3F00F4B6AF500CF3369 /* Bigpond_Menu_Bar_Prefix.pch */;
 		name = "Bigpond_Menu_Bar_Prefix.pch: 8";
