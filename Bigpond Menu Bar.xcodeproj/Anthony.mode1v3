@@ -267,15 +267,16 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
-								<string>92C6F78F1261D7C500E1259F</string>
-								<string>92C6F7901261D7C500E1259F</string>
-								<string>92C6F7BF1261D9DF00E1259F</string>
+								<string>92C6F81C1261DED900E1259F</string>
+								<string>92C6F81D1261DED900E1259F</string>
+								<string>92C6F81E1261DED900E1259F</string>
+								<string>92C6F81F1261DED900E1259F</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>16</integer>
+									<integer>18</integer>
 									<integer>7</integer>
 								</array>
 							</array>
@@ -327,7 +328,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>92C6F80C1261DD7E00E1259F</string>
+										<string>92C6F8291261DF4D00E1259F</string>
 										<key>history</key>
 										<array>
 											<string>92C6F7711261D56600E1259F</string>
@@ -565,7 +566,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {500, 218}}</string>
 								<key>RubberWindowFrame</key>
-								<string>356 135 500 500 0 0 1280 778 </string>
+								<string>487 128 500 500 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -591,7 +592,7 @@
 								<key>Frame</key>
 								<string>{{0, 223}, {500, 236}}</string>
 								<key>RubberWindowFrame</key>
-								<string>356 135 500 500 0 0 1280 778 </string>
+								<string>487 128 500 500 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -623,7 +624,7 @@
 			<key>WindowContentMinSize</key>
 			<string>486 300</string>
 			<key>WindowString</key>
-			<string>356 135 500 500 0 0 1280 778 </string>
+			<string>487 128 500 500 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
 			<string>92133E381261BA3500914ACD</string>
 			<key>WindowToolIsVisible</key>
