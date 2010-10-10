@@ -275,6 +275,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>15</integer>
 									<integer>8</integer>
 									<integer>7</integer>
 								</array>
@@ -299,7 +300,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>246 220 788 504 0 0 1280 778 </string>
+						<string>222 222 788 504 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -327,7 +328,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>92C6F7FE1261DC8100E1259F</string>
+										<string>92C6F8061261DD0600E1259F</string>
 										<key>history</key>
 										<array>
 											<string>92C6F7711261D56600E1259F</string>
@@ -346,7 +347,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {580, 260}}</string>
 								<key>RubberWindowFrame</key>
-								<string>246 220 788 504 0 0 1280 778 </string>
+								<string>222 222 788 504 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -366,7 +367,7 @@
 								<key>Frame</key>
 								<string>{{0, 265}, {580, 198}}</string>
 								<key>RubberWindowFrame</key>
-								<string>246 220 788 504 0 0 1280 778 </string>
+								<string>222 222 788 504 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -535,7 +536,7 @@
 		<string>/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/Bigpond Menu Bar.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>246 220 788 504 0 0 1280 778 </string>
+	<string>222 222 788 504 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

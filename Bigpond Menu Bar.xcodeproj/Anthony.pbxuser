@@ -15,7 +15,7 @@
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Release;
+		activeBuildConfigurationName = Distribution;
 		activeExecutable = 92133E2F1261BA1C00914ACD /* Bigpond Menu Bar */;
 		activeTarget = 8D1107260486CEB800E47090 /* Bigpond Menu Bar */;
 		codeSenseManager = 92133E451261BA3500914ACD /* Code sense */;
@@ -116,6 +116,10 @@
 			92C6F7FC1261DC8000E1259F /* XCBuildMessageTextBookmark */ = 92C6F7FC1261DC8000E1259F /* XCBuildMessageTextBookmark */;
 			92C6F7FD1261DC8000E1259F /* PBXTextBookmark */ = 92C6F7FD1261DC8000E1259F /* PBXTextBookmark */;
 			92C6F7FE1261DC8100E1259F /* PBXTextBookmark */ = 92C6F7FE1261DC8100E1259F /* PBXTextBookmark */;
+			92C6F8031261DC9D00E1259F /* PBXTextBookmark */ = 92C6F8031261DC9D00E1259F /* PBXTextBookmark */;
+			92C6F8041261DCF100E1259F /* PBXTextBookmark */ = 92C6F8041261DCF100E1259F /* PBXTextBookmark */;
+			92C6F8051261DCF100E1259F /* PBXTextBookmark */ = 92C6F8051261DCF100E1259F /* PBXTextBookmark */;
+			92C6F8061261DD0600E1259F /* PBXTextBookmark */ = 92C6F8061261DD0600E1259F /* PBXTextBookmark */;
 		};
 		sourceControlManager = 92133E441261BA3500914ACD /* Source Control */;
 		userBuildSettings = {
@@ -328,6 +332,46 @@
 		vrLoc = 0;
 	};
 	92C6F7FE1261DC8100E1259F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3F00F4B6AF500CF3369 /* Bigpond_Menu_Bar_Prefix.pch */;
+		name = "Bigpond_Menu_Bar_Prefix.pch: 8";
+		rLen = 0;
+		rLoc = 163;
+		rType = 0;
+		vrLen = 163;
+		vrLoc = 0;
+	};
+	92C6F8031261DC9D00E1259F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3F00F4B6AF500CF3369 /* Bigpond_Menu_Bar_Prefix.pch */;
+		name = "Bigpond_Menu_Bar_Prefix.pch: 8";
+		rLen = 0;
+		rLoc = 163;
+		rType = 0;
+		vrLen = 163;
+		vrLoc = 0;
+	};
+	92C6F8041261DCF100E1259F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3F00F4B6AF500CF3369 /* Bigpond_Menu_Bar_Prefix.pch */;
+		name = "Bigpond_Menu_Bar_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 163;
+		vrLoc = 0;
+	};
+	92C6F8051261DCF100E1259F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3F00F4B6AF500CF3369 /* Bigpond_Menu_Bar_Prefix.pch */;
+		name = "Bigpond_Menu_Bar_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 163;
+		vrLoc = 0;
+	};
+	92C6F8061261DD0600E1259F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 256AC3F00F4B6AF500CF3369 /* Bigpond_Menu_Bar_Prefix.pch */;
 		name = "Bigpond_Menu_Bar_Prefix.pch: 8";
