@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		927CB47D1261706A0024DAD1 /* Sign, Upload and Push */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 927CB4871261706B0024DAD1 /* Build configuration list for PBXAggregateTarget "Sign, Upload and Push" */;
+			buildPhases = (
+				927CB47C1261706A0024DAD1 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Sign, Upload and Push";
+			productName = Distribution;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		256AC3DA0F4B6AC300CF3369 /* Bigpond_Menu_BarAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* Bigpond_Menu_BarAppDelegate.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		927CB2C2126163470024DAD1 /* BigPond.icns in Resources */ = {isa = PBXBuildFile; fileRef = 927CB2C1126163470024DAD1 /* BigPond.icns */; };
+		927CB2D4126163BA0024DAD1 /* bp.png in Resources */ = {isa = PBXBuildFile; fileRef = 927CB2D1126163BA0024DAD1 /* bp.png */; };
+		927CB2D5126163BA0024DAD1 /* fade.png in Resources */ = {isa = PBXBuildFile; fileRef = 927CB2D2126163BA0024DAD1 /* fade.png */; };
+		927CB2D6126163BA0024DAD1 /* fail.png in Resources */ = {isa = PBXBuildFile; fileRef = 927CB2D3126163BA0024DAD1 /* fail.png */; };
+		927CB2D9126163C40024DAD1 /* LoginItemsAE.c in Sources */ = {isa = PBXBuildFile; fileRef = 927CB2D7126163C40024DAD1 /* LoginItemsAE.c */; };
+		927CB2DB126163CD0024DAD1 /* ReleaseLog.txt in Resources */ = {isa = PBXBuildFile; fileRef = 927CB2DA126163CD0024DAD1 /* ReleaseLog.txt */; };
+		927CB2DE126163DE0024DAD1 /* UsageMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 927CB2DD126163DE0024DAD1 /* UsageMeter.m */; };
+		927CB2EA1261643D0024DAD1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927CB2E81261643D0024DAD1 /* MainMenu.xib */; };
+		927CB33D1261646C0024DAD1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927CB33C1261646C0024DAD1 /* Security.framework */; };
+		927CB415126164E00024DAD1 /* TODO.txt in Resources */ = {isa = PBXBuildFile; fileRef = 927CB414126164E00024DAD1 /* TODO.txt */; };
+		927CB45912616B0F0024DAD1 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927CB45812616B0F0024DAD1 /* Sparkle.framework */; };
+		927CB46D12616B6D0024DAD1 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 927CB45812616B0F0024DAD1 /* Sparkle.framework */; };
+		927CB47112616DD70024DAD1 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 927CB47012616DD70024DAD1 /* dsa_pub.pem */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		927CB46A12616B380024DAD1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				927CB46D12616B6D0024DAD1 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		256AC3D80F4B6AC300CF3369 /* Bigpond_Menu_BarAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bigpond_Menu_BarAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* Bigpond_Menu_BarAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bigpond_Menu_BarAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* Bigpond_Menu_Bar_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bigpond_Menu_Bar_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* Bigpond_Menu_Bar-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Bigpond_Menu_Bar-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Bigpond Menu Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bigpond Menu Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		927CB2C1126163470024DAD1 /* BigPond.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = BigPond.icns; sourceTree = "<group>"; };
+		927CB2D1126163BA0024DAD1 /* bp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bp.png; sourceTree = "<group>"; };
+		927CB2D2126163BA0024DAD1 /* fade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fade.png; sourceTree = "<group>"; };
+		927CB2D3126163BA0024DAD1 /* fail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fail.png; sourceTree = "<group>"; };
+		927CB2D7126163C40024DAD1 /* LoginItemsAE.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LoginItemsAE.c; sourceTree = "<group>"; };
+		927CB2D8126163C40024DAD1 /* LoginItemsAE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginItemsAE.h; sourceTree = "<group>"; };
+		927CB2DA126163CD0024DAD1 /* ReleaseLog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReleaseLog.txt; sourceTree = "<group>"; };
+		927CB2DC126163DE0024DAD1 /* UsageMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsageMeter.h; sourceTree = "<group>"; };
+		927CB2DD126163DE0024DAD1 /* UsageMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsageMeter.m; sourceTree = "<group>"; };
+		927CB2E91261643D0024DAD1 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		927CB33C1261646C0024DAD1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		927CB414126164E00024DAD1 /* TODO.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO.txt; sourceTree = "<group>"; };
+		927CB45812616B0F0024DAD1 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		927CB47012616DD70024DAD1 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				927CB33D1261646C0024DAD1 /* Security.framework in Frameworks */,
+				927CB45912616B0F0024DAD1 /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3D80F4B6AC300CF3369 /* Bigpond_Menu_BarAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* Bigpond_Menu_BarAppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				927CB45812616B0F0024DAD1 /* Sparkle.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				927CB33C1261646C0024DAD1 /* Security.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Bigpond Menu Bar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Bigpond Menu Bar */ = {
+			isa = PBXGroup;
+			children = (
+				927CB2E0126163F10024DAD1 /* Other */,
+				927CB2DF126163E20024DAD1 /* Usage Meter */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = "Bigpond Menu Bar";
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3F00F4B6AF500CF3369 /* Bigpond_Menu_Bar_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				927CB47012616DD70024DAD1 /* dsa_pub.pem */,
+				927CB2E81261643D0024DAD1 /* MainMenu.xib */,
+				927CB2C4126163B00024DAD1 /* Images */,
+				927CB2C1126163470024DAD1 /* BigPond.icns */,
+				8D1107310486CEB800E47090 /* Bigpond_Menu_Bar-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		927CB2C4126163B00024DAD1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				927CB2D1126163BA0024DAD1 /* bp.png */,
+				927CB2D2126163BA0024DAD1 /* fade.png */,
+				927CB2D3126163BA0024DAD1 /* fail.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		927CB2DF126163E20024DAD1 /* Usage Meter */ = {
+			isa = PBXGroup;
+			children = (
+				927CB2DC126163DE0024DAD1 /* UsageMeter.h */,
+				927CB2DD126163DE0024DAD1 /* UsageMeter.m */,
+			);
+			name = "Usage Meter";
+			sourceTree = "<group>";
+		};
+		927CB2E0126163F10024DAD1 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				927CB2DA126163CD0024DAD1 /* ReleaseLog.txt */,
+				927CB2D7126163C40024DAD1 /* LoginItemsAE.c */,
+				927CB2D8126163C40024DAD1 /* LoginItemsAE.h */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				927CB414126164E00024DAD1 /* TODO.txt */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Bigpond Menu Bar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Bigpond Menu Bar" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				927CB46A12616B380024DAD1 /* CopyFiles */,
+				927CB47312616ECA0024DAD1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bigpond Menu Bar";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "Bigpond Menu Bar";
+			productReference = 8D1107320486CEB800E47090 /* Bigpond Menu Bar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Bigpond Menu Bar" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Bigpond Menu Bar */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Bigpond Menu Bar */,
+				927CB47D1261706A0024DAD1 /* Sign, Upload and Push */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				927CB2C2126163470024DAD1 /* BigPond.icns in Resources */,
+				927CB2D4126163BA0024DAD1 /* bp.png in Resources */,
+				927CB2D5126163BA0024DAD1 /* fade.png in Resources */,
+				927CB2D6126163BA0024DAD1 /* fail.png in Resources */,
+				927CB2DB126163CD0024DAD1 /* ReleaseLog.txt in Resources */,
+				927CB2EA1261643D0024DAD1 /* MainMenu.xib in Resources */,
+				927CB415126164E00024DAD1 /* TODO.txt in Resources */,
+				927CB47112616DD70024DAD1 /* dsa_pub.pem in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		927CB47312616ECA0024DAD1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /usr/bin/ruby;
+			shellScript = "#!/usr/bin/ruby\n# xcode-git-cfbundleversion.rb\n# Update CFBundleVersion in Info.plist file with short Git revision string\n# http://github.com/digdog/xcode-git-cfbundleversion/\n#\n# This is based on\n# http://github.com/jsallis/xcode-git-versioner\n# http://github.com/juretta/iphone-project-tools/tree/v1.0.3\n\n# Fail if not run from Xcode\nraise \"Must be run from Xcode's Run Script Build Phase\" unless ENV['XCODE_VERSION_ACTUAL']\n\n# Get the current git revision hash\nrevision = `/usr/local/bin/git rev-parse --short HEAD`.chomp!\n\nif (revision)\n    # Update Info.plist file\n    plistFile = \"#{ENV['BUILT_PRODUCTS_DIR']}/#{ENV['INFOPLIST_PATH']}\"\n\n    # Convert the binary plist to xml based\n    `/usr/bin/plutil -convert xml1 #{plistFile}`\n\n    # Open Info.plist and set the CFBundleVersion value to the \"CFBuildVersion (revision hash)\" format\n    lines = IO.readlines(plistFile).join\n    lines.gsub!(/(<key>CFBundleVersion<\\/key>\\n\\t<string>)(\\d+\\.\\d+)(<\\/string>)/, \"\\\\1\\\\2 (#{revision})\\\\3\")\n\n    # Overwrite the original Info.plist file with our updated version\n    File.open(plistFile, 'w') {|f| f.puts lines}\n\n    # Convert back to binary plist\n    `/usr/bin/plutil -convert binary1 #{plistFile}`\n\n    # Report to the user\n    puts \"CFBundleVersion has revision number #{revision} in #{plistFile}\"\nend";
+		};
+		927CB47C1261706A0024DAD1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "set -o errexit\n\n[ $BUILD_STYLE = Distribution ] || { echo Distribution target requires \"'Release'\" build style; false; }\n\nVERSION=$(defaults read \"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Info\" CFBundleVersion)\nDOWNLOAD_BASE_URL=\"http://graph.tk/app\"\nRELEASENOTES_URL=\"http://url3.tk/mbapp/\"\nARCHIVE_FILENAME=\"$PROJECT_NAME $VERSION.zip\"\nDOWNLOAD_URL=\"$DOWNLOAD_BASE_URL/$ARCHIVE_FILENAME\"\nKEYCHAIN_PRIVKEY_NAME=\"Sparkle Private Key 1\"\n\nWD=$PWD\ncd \"$BUILT_PRODUCTS_DIR\"\nrm -f \"$PROJECT_NAME\"*.zip\nditto -ck --keepParent \"$PROJECT_NAME.app\" \"$ARCHIVE_FILENAME\"\n\nSIZE=$(stat -f %z \"$ARCHIVE_FILENAME\")\nPUBDATE=$(LC_TIME=en_US date +\"%a, %d %b %G %T %z\")\nSIGNATURE=$(\n\topenssl dgst -sha1 -binary < \"$ARCHIVE_FILENAME\" \\\n\t| openssl dgst -dss1 -sign <(security find-generic-password -g -s \"$KEYCHAIN_PRIVKEY_NAME\" 2>&1 1>/dev/null | perl -pe '($_) = /\"(.+)\"/; s/\\\\012/\\n/g' | perl -MXML::LibXML -e 'print XML::LibXML->new()->parse_file(\"-\")->findvalue(q(//string[preceding-sibling::key[1] = \"NOTE\"]))') \\\n\t| openssl enc -base64\n)\n\n[ $SIGNATURE ] || { echo Unable to load signing private key with name \"'$KEYCHAIN_PRIVKEY_NAME'\" from keychain; false; }\n\ncat|pbcopy <<EOF\n\t\t<item>\n\t\t\t<title>Version $VERSION</title>\n\t\t\t<sparkle:releaseNotesLink>$RELEASENOTES_URL</sparkle:releaseNotesLink>\n\t\t\t<pubDate>$PUBDATE</pubDate>\n\t\t\t<enclosure\n\t\t\t\turl=\"$DOWNLOAD_URL\"\n\t\t\t\tsparkle:version=\"$VERSION\"\n\t\t\t\ttype=\"application/octet-stream\"\n\t\t\t\tlength=\"$SIZE\"\n\t\t\t\tsparkle:dsaSignature=\"$SIGNATURE\"\n\t\t\t/>\n\t\t</item>\nEOF\n\n\n\ncat <<EOF\n\t\t<item>\n\t\t\t<title>Version $VERSION</title>\n\t\t\t<sparkle:releaseNotesLink>$RELEASENOTES_URL</sparkle:releaseNotesLink>\n\t\t\t<pubDate>$PUBDATE</pubDate>\n\t\t\t<enclosure\n\t\t\t\turl=\"$DOWNLOAD_URL\"\n\t\t\t\tsparkle:version=\"$VERSION\"\n\t\t\t\ttype=\"application/octet-stream\"\n\t\t\t\tlength=\"$SIZE\"\n\t\t\t\tsparkle:dsaSignature=\"$SIGNATURE\"\n\t\t\t/>\n\t\t</item>\nEOF\necho put above into http://url3.tk/mbapp/?update\n\nopen http://url3.tk/mbapp/?update\n\necho Uploading to graph.tk server...\n\nKEYCHAIN_FTP_USERNAME_NAME=\"graph.tk username\"\nKEYCHAIN_FTP_PASSWORD_NAME=\"graph.tk password\"\n\n\n\nFTPU=$(security find-generic-password -g -s \"$KEYCHAIN_FTP_USERNAME_NAME\" 2>&1 1>/dev/null | perl -pe '($_) = /\"(.+)\"/; s/\\\\012/\\n/g' | perl -MXML::LibXML -e 'print XML::LibXML->new()->parse_file(\"-\")->findvalue(q(//string[preceding-sibling::key[1] = \"NOTE\"]))')\n\nFTPP=$(security find-generic-password -g -s \"$KEYCHAIN_FTP_PASSWORD_NAME\" 2>&1 1>/dev/null | perl -pe '($_) = /\"(.+)\"/; s/\\\\012/\\n/g' | perl -MXML::LibXML -e 'print XML::LibXML->new()->parse_file(\"-\")->findvalue(q(//string[preceding-sibling::key[1] = \"NOTE\"]))')\n\n\n\nFTPS=\"graph.tk\" # remote ftp server\nFTPF=\"/public_html/app/\" # remote ftp server directory for $FTPU & $FTPP\nLOCALD=\"$ARCHIVE_FILENAME\"\nncftpput -m -u $FTPU -p $FTPP $FTPS  $FTPF \"$LOCALD\"\necho Uploaded.\n\n\n\n\n\n\n#echo cd \"\\\"$PWD\\\"\"\n#echo \"$HOME/Sites/upload.sh\" \"\\\"$ARCHIVE_FILENAME\\\"\"\n#echo scp \"'$HOME/svn/my-cool-app/build/Release/$ARCHIVE_FILENAME'\" www.example.com:download/\n#echo scp \"'$WD/appcast.xml'\" www.example.com:web/software/my-cool-app/appcast.xml";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* Bigpond_Menu_BarAppDelegate.m in Sources */,
+				927CB2D9126163C40024DAD1 /* LoginItemsAE.c in Sources */,
+				927CB2DE126163DE0024DAD1 /* UsageMeter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		927CB2E81261643D0024DAD1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				927CB2E91261643D0024DAD1 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		927CB45512616A390024DAD1 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Distribution;
+		};
+		927CB45612616A390024DAD1 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Bigpond_Menu_Bar_Prefix.pch;
+				INFOPLIST_FILE = "Bigpond_Menu_Bar-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "Bigpond Menu Bar";
+			};
+			name = Distribution;
+		};
+		927CB47E1261706A0024DAD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Distribution;
+			};
+			name = Debug;
+		};
+		927CB47F1261706A0024DAD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Distribution;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		927CB4801261706A0024DAD1 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = Distribution;
+			};
+			name = Distribution;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Bigpond_Menu_Bar_Prefix.pch;
+				INFOPLIST_FILE = "Bigpond_Menu_Bar-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "Bigpond Menu Bar";
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Bigpond_Menu_Bar_Prefix.pch;
+				INFOPLIST_FILE = "Bigpond_Menu_Bar-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "Bigpond Menu Bar";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		927CB4871261706B0024DAD1 /* Build configuration list for PBXAggregateTarget "Sign, Upload and Push" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				927CB47E1261706A0024DAD1 /* Debug */,
+				927CB47F1261706A0024DAD1 /* Release */,
+				927CB4801261706A0024DAD1 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Bigpond Menu Bar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+				927CB45612616A390024DAD1 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Bigpond Menu Bar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				927CB45512616A390024DAD1 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
