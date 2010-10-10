@@ -9,13 +9,13 @@
 	};
 	256AC3F00F4B6AF500CF3369 /* Bigpond_Menu_Bar_Prefix.pch */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {740, 186}}";
+			sepNavIntBoundsRect = "{{0, 0}, {740, 228}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 163}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Distribution;
+		activeBuildConfigurationName = Release;
 		activeExecutable = 92133E2F1261BA1C00914ACD /* Bigpond Menu Bar */;
 		activeTarget = 8D1107260486CEB800E47090 /* Bigpond Menu Bar */;
 		codeSenseManager = 92133E451261BA3500914ACD /* Code sense */;
@@ -106,6 +106,9 @@
 			92C6F7891261D68200E1259F = 92C6F7891261D68200E1259F /* PBXBookmark */;
 			92C6F78A1261D68200E1259F = 92C6F78A1261D68200E1259F /* PBXTextBookmark */;
 			92C6F79C1261D7E100E1259F /* PBXTextBookmark */ = 92C6F79C1261D7E100E1259F /* PBXTextBookmark */;
+			92C6F7C01261D9DF00E1259F /* PBXTextBookmark */ = 92C6F7C01261D9DF00E1259F /* PBXTextBookmark */;
+			92C6F7C11261D9DF00E1259F /* XCBuildMessageTextBookmark */ = 92C6F7C11261D9DF00E1259F /* XCBuildMessageTextBookmark */;
+			92C6F7C21261D9DF00E1259F /* PBXTextBookmark */ = 92C6F7C21261D9DF00E1259F /* PBXTextBookmark */;
 		};
 		sourceControlManager = 92133E441261BA3500914ACD /* Source Control */;
 		userBuildSettings = {
@@ -171,7 +174,7 @@
 	927CB2D7126163C40024DAD1 /* LoginItemsAE.c */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {691, 10647}}";
-			sepNavSelRange = "{82, 0}";
+			sepNavSelRange = "{335, 0}";
 			sepNavVisRange = "{0, 975}";
 		};
 	};
@@ -227,6 +230,35 @@
 		rLoc = 82;
 		rType = 0;
 		vrLen = 975;
+		vrLoc = 0;
+	};
+	92C6F7C01261D9DF00E1259F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 927CB2D7126163C40024DAD1 /* LoginItemsAE.c */;
+		name = "LoginItemsAE.c: 10";
+		rLen = 0;
+		rLoc = 335;
+		rType = 0;
+		vrLen = 975;
+		vrLoc = 0;
+	};
+	92C6F7C11261D9DF00E1259F /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Precompile Bigpond_Menu_Bar_Prefix.pch";
+		fRef = 256AC3F00F4B6AF500CF3369 /* Bigpond_Menu_Bar_Prefix.pch */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 0;
+		rLoc = 0;
+		rType = 1;
+	};
+	92C6F7C21261D9DF00E1259F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3F00F4B6AF500CF3369 /* Bigpond_Menu_Bar_Prefix.pch */;
+		name = "Bigpond_Menu_Bar_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 163;
 		vrLoc = 0;
 	};
 }
