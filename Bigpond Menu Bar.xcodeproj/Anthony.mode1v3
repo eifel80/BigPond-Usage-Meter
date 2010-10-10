@@ -327,7 +327,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>92C6F8771261E09F00E1259F</string>
+										<string>92C6F8801261E0EA00E1259F</string>
 										<key>history</key>
 										<array>
 											<string>92C6F7711261D56600E1259F</string>
@@ -564,7 +564,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {500, 218}}</string>
 								<key>RubberWindowFrame</key>
-								<string>259 127 500 500 0 0 1280 778 </string>
+								<string>258 103 500 500 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -590,7 +590,7 @@
 								<key>Frame</key>
 								<string>{{0, 223}, {500, 236}}</string>
 								<key>RubberWindowFrame</key>
-								<string>259 127 500 500 0 0 1280 778 </string>
+								<string>258 103 500 500 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -622,7 +622,7 @@
 			<key>WindowContentMinSize</key>
 			<string>486 300</string>
 			<key>WindowString</key>
-			<string>259 127 500 500 0 0 1280 778 </string>
+			<string>258 103 500 500 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
 			<string>92133E381261BA3500914ACD</string>
 			<key>WindowToolIsVisible</key>
