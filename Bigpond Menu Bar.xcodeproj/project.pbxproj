@@ -67,7 +67,6 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Bigpond_Menu_Bar-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Bigpond_Menu_Bar-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Bigpond Menu Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bigpond Menu Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		924561111262D2EC00300612 /* Bigpond_Menu_Bar-Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bigpond_Menu_Bar-Info copy.plist"; sourceTree = "<group>"; };
 		927CB2C1126163470024DAD1 /* BigPond.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = BigPond.icns; sourceTree = "<group>"; };
 		927CB2D1126163BA0024DAD1 /* bp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bp.png; sourceTree = "<group>"; };
 		927CB2D2126163BA0024DAD1 /* fade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fade.png; sourceTree = "<group>"; };
@@ -166,7 +165,6 @@
 				927CB2C1126163470024DAD1 /* BigPond.icns */,
 				8D1107310486CEB800E47090 /* Bigpond_Menu_Bar-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				924561111262D2EC00300612 /* Bigpond_Menu_Bar-Info copy.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";

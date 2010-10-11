@@ -189,6 +189,10 @@ NSMutableArray *js_used, *js_date,*js_unmetered,*js_upload,*js_download;
 			dataloaded=1;
 		}
 		
+		//Debug mode
+		//[data release];
+		//data = [[NSString alloc] initWithContentsOfFile:@"/debug/other.html"];
+		
 		if(!data){
 			return @"No Data";
 		}
@@ -237,8 +241,9 @@ NSMutableArray *js_used, *js_date,*js_unmetered,*js_upload,*js_download;
 					}
 				}
 			}
+			
+			//NSLog(@"Wrong response data: %@",data);
 			[data release];
-			NSLog(@"Wrong response data: %@",data);
 			return @"Wrong Response";
 			//return [NSString stringWithFormat:@"Wrong Response\n\n\n----------BEGIN RESPONSE----------------%@-------------END RESPONSE-----------",data];
 			
