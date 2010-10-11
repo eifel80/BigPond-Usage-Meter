@@ -6,6 +6,8 @@
 	<string>English</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Copyright 2009-2010 Anthony</string>
 	<key>CFBundleIconFile</key>
 	<string>BigPond</string>
 	<key>CFBundleIdentifier</key>
@@ -16,29 +18,27 @@
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
-	<key>CFBundleGetInfoString</key>
-	<string>Copyright 2009-2010 Anthony</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.28</string>
-	<key>CFBundleVersion</key>
-	<string>0.4</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.4</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
-	<key>NSMainNibFile</key>
-	<string>MainMenu</string>
-	<key>SUPublicDSAKeyFile</key>
-	<string>dsa_pub.pem</string>
-	<key>SUFeedURL</key>
-	<string>http://url3.tk/mbappcast.php</string>
-	<key>SUEnableSystemProfiling</key>
-	<false/>
-	<key>SUScheduledCheckInterval</key>
-	<integer>86400</integer>
-	<key>NSPrincipalClass</key>
-	<string>NSApplication</string>
 	<key>LSUIElement</key>
 	<true/>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>SUEnableSystemProfiling</key>
+	<false/>
+	<key>SUFeedURL</key>
+	<string>http://url3.tk/mbappcast.php</string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
+	<key>SUScheduledCheckInterval</key>
+	<integer>86400</integer>
 </dict>
 </plist>

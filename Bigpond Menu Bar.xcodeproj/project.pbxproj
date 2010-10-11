@@ -11,7 +11,9 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 927CB4871261706B0024DAD1 /* Build configuration list for PBXAggregateTarget "Sign, Upload and Push" */;
 			buildPhases = (
-				927CB47C1261706A0024DAD1 /* ShellScript */,
+				924560ED1262D29100300612 /* Commit */,
+				924560EF1262D2B000300612 /* Set Version */,
+				927CB47C1261706A0024DAD1 /* Sign, Upload and Push */,
 			);
 			dependencies = (
 			);
@@ -25,6 +27,23 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		924560F41262D2EB00300612 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		924560F51262D2EB00300612 /* BigPond.icns in Resources */ = {isa = PBXBuildFile; fileRef = 927CB2C1126163470024DAD1 /* BigPond.icns */; };
+		924560F61262D2EB00300612 /* bp.png in Resources */ = {isa = PBXBuildFile; fileRef = 927CB2D1126163BA0024DAD1 /* bp.png */; };
+		924560F71262D2EB00300612 /* fade.png in Resources */ = {isa = PBXBuildFile; fileRef = 927CB2D2126163BA0024DAD1 /* fade.png */; };
+		924560F81262D2EB00300612 /* fail.png in Resources */ = {isa = PBXBuildFile; fileRef = 927CB2D3126163BA0024DAD1 /* fail.png */; };
+		924560F91262D2EB00300612 /* ReleaseLog.txt in Resources */ = {isa = PBXBuildFile; fileRef = 927CB2DA126163CD0024DAD1 /* ReleaseLog.txt */; };
+		924560FA1262D2EB00300612 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927CB2E81261643D0024DAD1 /* MainMenu.xib */; };
+		924560FB1262D2EB00300612 /* TODO.txt in Resources */ = {isa = PBXBuildFile; fileRef = 927CB414126164E00024DAD1 /* TODO.txt */; };
+		924560FC1262D2EB00300612 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 927CB47012616DD70024DAD1 /* dsa_pub.pem */; };
+		924560FE1262D2EB00300612 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		924560FF1262D2EB00300612 /* Bigpond_Menu_BarAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* Bigpond_Menu_BarAppDelegate.m */; };
+		924561001262D2EB00300612 /* LoginItemsAE.c in Sources */ = {isa = PBXBuildFile; fileRef = 927CB2D7126163C40024DAD1 /* LoginItemsAE.c */; };
+		924561011262D2EB00300612 /* UsageMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 927CB2DD126163DE0024DAD1 /* UsageMeter.m */; };
+		924561031262D2EB00300612 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		924561041262D2EB00300612 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927CB33C1261646C0024DAD1 /* Security.framework */; };
+		924561051262D2EB00300612 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927CB45812616B0F0024DAD1 /* Sparkle.framework */; };
+		924561071262D2EB00300612 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 927CB45812616B0F0024DAD1 /* Sparkle.framework */; };
 		927CB2C2126163470024DAD1 /* BigPond.icns in Resources */ = {isa = PBXBuildFile; fileRef = 927CB2C1126163470024DAD1 /* BigPond.icns */; };
 		927CB2D4126163BA0024DAD1 /* bp.png in Resources */ = {isa = PBXBuildFile; fileRef = 927CB2D1126163BA0024DAD1 /* bp.png */; };
 		927CB2D5126163BA0024DAD1 /* fade.png in Resources */ = {isa = PBXBuildFile; fileRef = 927CB2D2126163BA0024DAD1 /* fade.png */; };
@@ -41,6 +60,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		924561061262D2EB00300612 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				924561071262D2EB00300612 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		927CB46A12616B380024DAD1 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -65,6 +94,8 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Bigpond_Menu_Bar-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Bigpond_Menu_Bar-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Bigpond Menu Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bigpond Menu Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9245610F1262D2EC00300612 /* Bigpond Menu Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bigpond Menu Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		924561111262D2EC00300612 /* Bigpond_Menu_Bar-Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bigpond_Menu_Bar-Info copy.plist"; sourceTree = "<group>"; };
 		927CB2C1126163470024DAD1 /* BigPond.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = BigPond.icns; sourceTree = "<group>"; };
 		927CB2D1126163BA0024DAD1 /* bp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bp.png; sourceTree = "<group>"; };
 		927CB2D2126163BA0024DAD1 /* fade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fade.png; sourceTree = "<group>"; };
@@ -89,6 +120,16 @@
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				927CB33D1261646C0024DAD1 /* Security.framework in Frameworks */,
 				927CB45912616B0F0024DAD1 /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924561021262D2EB00300612 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924561031262D2EB00300612 /* Cocoa.framework in Frameworks */,
+				924561041262D2EB00300612 /* Security.framework in Frameworks */,
+				924561051262D2EB00300612 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* Bigpond Menu Bar.app */,
+				9245610F1262D2EC00300612 /* Bigpond Menu Bar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,6 +205,7 @@
 				927CB2C1126163470024DAD1 /* BigPond.icns */,
 				8D1107310486CEB800E47090 /* Bigpond_Menu_Bar-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				924561111262D2EC00300612 /* Bigpond_Menu_Bar-Info copy.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -210,11 +253,10 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D1107260486CEB800E47090 /* Bigpond Menu Bar */ = {
+		8D1107260486CEB800E47090 /* Bigpond Menu Bar Debug */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Bigpond Menu Bar" */;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Bigpond Menu Bar Debug" */;
 			buildPhases = (
-				92C6F8841261E15500E1259F /* Delete Old Binary */,
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
@@ -227,10 +269,32 @@
 			);
 			dependencies = (
 			);
-			name = "Bigpond Menu Bar";
+			name = "Bigpond Menu Bar Debug";
 			productInstallPath = "$(HOME)/Applications";
 			productName = "Bigpond Menu Bar";
 			productReference = 8D1107320486CEB800E47090 /* Bigpond Menu Bar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		924560F21262D2EB00300612 /* Bigpond Menu Bar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9245610B1262D2EB00300612 /* Build configuration list for PBXNativeTarget "Bigpond Menu Bar" */;
+			buildPhases = (
+				924560F31262D2EB00300612 /* Resources */,
+				924560FD1262D2EB00300612 /* Sources */,
+				924561021262D2EB00300612 /* Frameworks */,
+				924561061262D2EB00300612 /* CopyFiles */,
+				924561081262D2EB00300612 /* Commit */,
+				924561091262D2EB00300612 /* Set Version */,
+				9245610A1262D2EB00300612 /* Sign, Upload, Publish */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bigpond Menu Bar";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "Bigpond Menu Bar";
+			productReference = 9245610F1262D2EC00300612 /* Bigpond Menu Bar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -245,8 +309,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D1107260486CEB800E47090 /* Bigpond Menu Bar */,
+				8D1107260486CEB800E47090 /* Bigpond Menu Bar Debug */,
 				927CB47D1261706A0024DAD1 /* Sign, Upload and Push */,
+				924560F21262D2EB00300612 /* Bigpond Menu Bar */,
 			);
 		};
 /* End PBXProject section */
@@ -268,9 +333,95 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		924560F31262D2EB00300612 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924560F41262D2EB00300612 /* InfoPlist.strings in Resources */,
+				924560F51262D2EB00300612 /* BigPond.icns in Resources */,
+				924560F61262D2EB00300612 /* bp.png in Resources */,
+				924560F71262D2EB00300612 /* fade.png in Resources */,
+				924560F81262D2EB00300612 /* fail.png in Resources */,
+				924560F91262D2EB00300612 /* ReleaseLog.txt in Resources */,
+				924560FA1262D2EB00300612 /* MainMenu.xib in Resources */,
+				924560FB1262D2EB00300612 /* TODO.txt in Resources */,
+				924560FC1262D2EB00300612 /* dsa_pub.pem in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		924560ED1262D29100300612 /* Commit */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Commit;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "if [ $BUILD_STYLE = Distribution ]; then\n\t/usr/local/bin/git commit -a -m \"Distribution Build\";/usr/local/bin/git push;\nfi";
+		};
+		924560EF1262D2B000300612 /* Set Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set Version";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /usr/bin/ruby;
+			shellScript = "#!/usr/bin/ruby\n# xcode-git-cfbundleversion.rb\n# Update CFBundleVersion in Info.plist file with short Git revision string\n# http://github.com/digdog/xcode-git-cfbundleversion/\n#\n# This is based on\n# http://github.com/jsallis/xcode-git-versioner\n# http://github.com/juretta/iphone-project-tools/tree/v1.0.3\n\n# Fail if not run from Xcode\nraise \"Must be run from Xcode's Run Script Build Phase\" unless ENV['XCODE_VERSION_ACTUAL']\n\n# Get the current git revision hash\nrevision = `/usr/local/bin/git rev-parse --short HEAD`.chomp!\n\nif (revision)\n    # Update Info.plist file\n    plistFile = \"#{ENV['BUILT_PRODUCTS_DIR']}/#{ENV['INFOPLIST_PATH']}\"\n\n    # Convert the binary plist to xml based\n    #`/usr/bin/plutil -convert xml1 #{plistFile}`\n\n    # Open Info.plist and set the CFBundleVersion value to the \"CFBuildVersion (revision hash)\" format\n    lines = IO.readlines(plistFile).join\n    lines.gsub!(/(<key>CFBundleVersion<\\/key>\\n\\t<string>)(\\d+\\.\\d+)(<\\/string>)/, \"\\\\1\\\\2 (#{revision})\\\\3\")\n\n    # Overwrite the original Info.plist file with our updated version\n    File.open(plistFile, 'w') {|f| f.puts lines}\n\n    # Convert back to binary plist\n    #`/usr/bin/plutil -convert binary1 #{plistFile}`\n\n    # Report to the user\n    puts \"CFBundleVersion has revision number #{revision} in #{plistFile}\"\nend";
+		};
+		924561081262D2EB00300612 /* Commit */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Commit;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "if [ $BUILD_STYLE = Distribution ]; then\n\t/usr/local/bin/git commit -a -m \"Distribution Build\";/usr/local/bin/git push;\nfi";
+		};
+		924561091262D2EB00300612 /* Set Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set Version";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /usr/bin/ruby;
+			shellScript = "#!/usr/bin/ruby\n# xcode-git-cfbundleversion.rb\n# Update CFBundleVersion in Info.plist file with short Git revision string\n# http://github.com/digdog/xcode-git-cfbundleversion/\n#\n# This is based on\n# http://github.com/jsallis/xcode-git-versioner\n# http://github.com/juretta/iphone-project-tools/tree/v1.0.3\n\n# Fail if not run from Xcode\nraise \"Must be run from Xcode's Run Script Build Phase\" unless ENV['XCODE_VERSION_ACTUAL']\n\n# Get the current git revision hash\nrevision = `/usr/local/bin/git rev-parse --short HEAD`.chomp!\n\nif (revision)\n    # Update Info.plist file\n    plistFile = \"#{ENV['BUILT_PRODUCTS_DIR']}/#{ENV['INFOPLIST_PATH']}\"\n\n    # Convert the binary plist to xml based\n    #`/usr/bin/plutil -convert xml1 #{plistFile}`\n\n    # Open Info.plist and set the CFBundleVersion value to the \"CFBuildVersion (revision hash)\" format\n    lines = IO.readlines(plistFile).join\n    lines.gsub!(/(<key>CFBundleVersion<\\/key>\\n\\t<string>)(\\d+\\.\\d+)(<\\/string>)/, \"\\\\1\\\\2 (#{revision})\\\\3\")\n\n    # Overwrite the original Info.plist file with our updated version\n    File.open(plistFile, 'w') {|f| f.puts lines}\n\n    # Convert back to binary plist\n    #`/usr/bin/plutil -convert binary1 #{plistFile}`\n\n    # Report to the user\n    puts \"CFBundleVersion has revision number #{revision} in #{plistFile}\"\nend";
+		};
+		9245610A1262D2EB00300612 /* Sign, Upload, Publish */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Sign, Upload, Publish";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "if [ $BUILD_STYLE = Distribution ]; then\nset -o errexit\n\n[ $BUILD_STYLE = Distribution ] || { echo Distribution target requires \"'Distribution'\" build style; false; }\n\nVERSION=$(defaults read \"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Info\" CFBundleVersion)\nDOWNLOAD_BASE_URL=\"http://graph.tk/app\"\nRELEASENOTES_URL=\"http://url3.tk/mbapp/\"\nARCHIVE_FILENAME=\"$PROJECT_NAME $VERSION.zip\"\nDOWNLOAD_URL=\"$DOWNLOAD_BASE_URL/$ARCHIVE_FILENAME\"\nKEYCHAIN_PRIVKEY_NAME=\"Sparkle Private Key 1\"\n\nWD=$PWD\ncd \"$BUILT_PRODUCTS_DIR\"\nrm -f \"$PROJECT_NAME\"*.zip\nditto -ck --keepParent \"$PROJECT_NAME.app\" \"$ARCHIVE_FILENAME\"\n\nSIZE=$(stat -f %z \"$ARCHIVE_FILENAME\")\nPUBDATE=$(LC_TIME=en_US date +\"%a, %d %b %G %T %z\")\nSIGNATURE=$(\n\topenssl dgst -sha1 -binary < \"$ARCHIVE_FILENAME\" \\\n\t| openssl dgst -dss1 -sign <(security find-generic-password -g -s \"$KEYCHAIN_PRIVKEY_NAME\" 2>&1 1>/dev/null | perl -pe '($_) = /\"(.+)\"/; s/\\\\012/\\n/g' | perl -MXML::LibXML -e 'print XML::LibXML->new()->parse_file(\"-\")->findvalue(q(//string[preceding-sibling::key[1] = \"NOTE\"]))') \\\n\t| openssl enc -base64\n)\n\n[ $SIGNATURE ] || { echo Unable to load signing private key with name \"'$KEYCHAIN_PRIVKEY_NAME'\" from keychain; false; }\n\ncat|pbcopy <<EOF\n\t\t<item>\n\t\t\t<title>Version $VERSION</title>\n\t\t\t<sparkle:releaseNotesLink>$RELEASENOTES_URL</sparkle:releaseNotesLink>\n\t\t\t<pubDate>$PUBDATE</pubDate>\n\t\t\t<enclosure\n\t\t\t\turl=\"$DOWNLOAD_URL\"\n\t\t\t\tsparkle:version=\"$VERSION\"\n\t\t\t\ttype=\"application/octet-stream\"\n\t\t\t\tlength=\"$SIZE\"\n\t\t\t\tsparkle:dsaSignature=\"$SIGNATURE\"\n\t\t\t/>\n\t\t</item>\nEOF\n\n\n\ncat <<EOF\n\t\t<item>\n\t\t\t<title>Version $VERSION</title>\n\t\t\t<sparkle:releaseNotesLink>$RELEASENOTES_URL</sparkle:releaseNotesLink>\n\t\t\t<pubDate>$PUBDATE</pubDate>\n\t\t\t<enclosure\n\t\t\t\turl=\"$DOWNLOAD_URL\"\n\t\t\t\tsparkle:version=\"$VERSION\"\n\t\t\t\ttype=\"application/octet-stream\"\n\t\t\t\tlength=\"$SIZE\"\n\t\t\t\tsparkle:dsaSignature=\"$SIGNATURE\"\n\t\t\t/>\n\t\t</item>\nEOF\necho put above into http://url3.tk/mbapp/?update\n\nopen http://url3.tk/mbapp/?update\n\necho Uploading to graph.tk server...\n\nKEYCHAIN_FTP_USERNAME_NAME=\"graph.tk username\"\nKEYCHAIN_FTP_PASSWORD_NAME=\"graph.tk password\"\n\n\n\nFTPU=$(security find-generic-password -g -s \"$KEYCHAIN_FTP_USERNAME_NAME\" 2>&1 1>/dev/null | perl -pe '($_) = /\"(.+)\"/; s/\\\\012/\\n/g' | perl -MXML::LibXML -e 'print XML::LibXML->new()->parse_file(\"-\")->findvalue(q(//string[preceding-sibling::key[1] = \"NOTE\"]))')\n\nFTPP=$(security find-generic-password -g -s \"$KEYCHAIN_FTP_PASSWORD_NAME\" 2>&1 1>/dev/null | perl -pe '($_) = /\"(.+)\"/; s/\\\\012/\\n/g' | perl -MXML::LibXML -e 'print XML::LibXML->new()->parse_file(\"-\")->findvalue(q(//string[preceding-sibling::key[1] = \"NOTE\"]))')\n\n\n\nFTPS=\"graph.tk\" # remote ftp server\nFTPF=\"/public_html/app/\" # remote ftp server directory for $FTPU & $FTPP\nLOCALD=\"$ARCHIVE_FILENAME\"\nncftpput -m -u $FTPU -p $FTPP $FTPS  $FTPF \"$LOCALD\"\necho Uploaded.\n\n\n\n\n\n\n#echo cd \"\\\"$PWD\\\"\"\n#echo \"$HOME/Sites/upload.sh\" \"\\\"$ARCHIVE_FILENAME\\\"\"\n#echo scp \"'$HOME/svn/my-cool-app/build/Release/$ARCHIVE_FILENAME'\" www.example.com:download/\n#echo scp \"'$WD/appcast.xml'\" www.example.com:web/software/my-cool-app/appcast.xml\n\nfi";
+		};
 		927CB47312616ECA0024DAD1 /* Set Version */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -285,13 +436,14 @@
 			shellPath = /usr/bin/ruby;
 			shellScript = "#!/usr/bin/ruby\n# xcode-git-cfbundleversion.rb\n# Update CFBundleVersion in Info.plist file with short Git revision string\n# http://github.com/digdog/xcode-git-cfbundleversion/\n#\n# This is based on\n# http://github.com/jsallis/xcode-git-versioner\n# http://github.com/juretta/iphone-project-tools/tree/v1.0.3\n\n# Fail if not run from Xcode\nraise \"Must be run from Xcode's Run Script Build Phase\" unless ENV['XCODE_VERSION_ACTUAL']\n\n# Get the current git revision hash\nrevision = `/usr/local/bin/git rev-parse --short HEAD`.chomp!\n\nif (revision)\n    # Update Info.plist file\n    plistFile = \"#{ENV['BUILT_PRODUCTS_DIR']}/#{ENV['INFOPLIST_PATH']}\"\n\n    # Convert the binary plist to xml based\n    #`/usr/bin/plutil -convert xml1 #{plistFile}`\n\n    # Open Info.plist and set the CFBundleVersion value to the \"CFBuildVersion (revision hash)\" format\n    lines = IO.readlines(plistFile).join\n    lines.gsub!(/(<key>CFBundleVersion<\\/key>\\n\\t<string>)(\\d+\\.\\d+)(<\\/string>)/, \"\\\\1\\\\2 (#{revision})\\\\3\")\n\n    # Overwrite the original Info.plist file with our updated version\n    File.open(plistFile, 'w') {|f| f.puts lines}\n\n    # Convert back to binary plist\n    #`/usr/bin/plutil -convert binary1 #{plistFile}`\n\n    # Report to the user\n    puts \"CFBundleVersion has revision number #{revision} in #{plistFile}\"\nend";
 		};
-		927CB47C1261706A0024DAD1 /* ShellScript */ = {
+		927CB47C1261706A0024DAD1 /* Sign, Upload and Push */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Sign, Upload and Push";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,7 +462,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "if [ $BUILD_STYLE = Distribution ]; then\n\t/usr/local/bin/git commit -a -m \"Distribution Build\";/usr/local/bin/git push;\nfi";
+			shellScript = "exit\nif [ $BUILD_STYLE = Distribution ]; then\n\t/usr/local/bin/git commit -a -m \"Distribution Build\";/usr/local/bin/git push;\nfi";
 		};
 		92C6F7F51261DBED00E1259F /* Sign, Upload, Publish */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -324,21 +476,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "if [ $BUILD_STYLE = Distribution ]; then\nset -o errexit\n\n[ $BUILD_STYLE = Distribution ] || { echo Distribution target requires \"'Distribution'\" build style; false; }\n\nVERSION=$(defaults read \"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Info\" CFBundleVersion)\nDOWNLOAD_BASE_URL=\"http://graph.tk/app\"\nRELEASENOTES_URL=\"http://url3.tk/mbapp/\"\nARCHIVE_FILENAME=\"$PROJECT_NAME $VERSION.zip\"\nDOWNLOAD_URL=\"$DOWNLOAD_BASE_URL/$ARCHIVE_FILENAME\"\nKEYCHAIN_PRIVKEY_NAME=\"Sparkle Private Key 1\"\n\nWD=$PWD\ncd \"$BUILT_PRODUCTS_DIR\"\nrm -f \"$PROJECT_NAME\"*.zip\nditto -ck --keepParent \"$PROJECT_NAME.app\" \"$ARCHIVE_FILENAME\"\n\nSIZE=$(stat -f %z \"$ARCHIVE_FILENAME\")\nPUBDATE=$(LC_TIME=en_US date +\"%a, %d %b %G %T %z\")\nSIGNATURE=$(\n\topenssl dgst -sha1 -binary < \"$ARCHIVE_FILENAME\" \\\n\t| openssl dgst -dss1 -sign <(security find-generic-password -g -s \"$KEYCHAIN_PRIVKEY_NAME\" 2>&1 1>/dev/null | perl -pe '($_) = /\"(.+)\"/; s/\\\\012/\\n/g' | perl -MXML::LibXML -e 'print XML::LibXML->new()->parse_file(\"-\")->findvalue(q(//string[preceding-sibling::key[1] = \"NOTE\"]))') \\\n\t| openssl enc -base64\n)\n\n[ $SIGNATURE ] || { echo Unable to load signing private key with name \"'$KEYCHAIN_PRIVKEY_NAME'\" from keychain; false; }\n\ncat|pbcopy <<EOF\n\t\t<item>\n\t\t\t<title>Version $VERSION</title>\n\t\t\t<sparkle:releaseNotesLink>$RELEASENOTES_URL</sparkle:releaseNotesLink>\n\t\t\t<pubDate>$PUBDATE</pubDate>\n\t\t\t<enclosure\n\t\t\t\turl=\"$DOWNLOAD_URL\"\n\t\t\t\tsparkle:version=\"$VERSION\"\n\t\t\t\ttype=\"application/octet-stream\"\n\t\t\t\tlength=\"$SIZE\"\n\t\t\t\tsparkle:dsaSignature=\"$SIGNATURE\"\n\t\t\t/>\n\t\t</item>\nEOF\n\n\n\ncat <<EOF\n\t\t<item>\n\t\t\t<title>Version $VERSION</title>\n\t\t\t<sparkle:releaseNotesLink>$RELEASENOTES_URL</sparkle:releaseNotesLink>\n\t\t\t<pubDate>$PUBDATE</pubDate>\n\t\t\t<enclosure\n\t\t\t\turl=\"$DOWNLOAD_URL\"\n\t\t\t\tsparkle:version=\"$VERSION\"\n\t\t\t\ttype=\"application/octet-stream\"\n\t\t\t\tlength=\"$SIZE\"\n\t\t\t\tsparkle:dsaSignature=\"$SIGNATURE\"\n\t\t\t/>\n\t\t</item>\nEOF\necho put above into http://url3.tk/mbapp/?update\n\nopen http://url3.tk/mbapp/?update\n\necho Uploading to graph.tk server...\n\nKEYCHAIN_FTP_USERNAME_NAME=\"graph.tk username\"\nKEYCHAIN_FTP_PASSWORD_NAME=\"graph.tk password\"\n\n\n\nFTPU=$(security find-generic-password -g -s \"$KEYCHAIN_FTP_USERNAME_NAME\" 2>&1 1>/dev/null | perl -pe '($_) = /\"(.+)\"/; s/\\\\012/\\n/g' | perl -MXML::LibXML -e 'print XML::LibXML->new()->parse_file(\"-\")->findvalue(q(//string[preceding-sibling::key[1] = \"NOTE\"]))')\n\nFTPP=$(security find-generic-password -g -s \"$KEYCHAIN_FTP_PASSWORD_NAME\" 2>&1 1>/dev/null | perl -pe '($_) = /\"(.+)\"/; s/\\\\012/\\n/g' | perl -MXML::LibXML -e 'print XML::LibXML->new()->parse_file(\"-\")->findvalue(q(//string[preceding-sibling::key[1] = \"NOTE\"]))')\n\n\n\nFTPS=\"graph.tk\" # remote ftp server\nFTPF=\"/public_html/app/\" # remote ftp server directory for $FTPU & $FTPP\nLOCALD=\"$ARCHIVE_FILENAME\"\nncftpput -m -u $FTPU -p $FTPP $FTPS  $FTPF \"$LOCALD\"\necho Uploaded.\n\n\n\n\n\n\n#echo cd \"\\\"$PWD\\\"\"\n#echo \"$HOME/Sites/upload.sh\" \"\\\"$ARCHIVE_FILENAME\\\"\"\n#echo scp \"'$HOME/svn/my-cool-app/build/Release/$ARCHIVE_FILENAME'\" www.example.com:download/\n#echo scp \"'$WD/appcast.xml'\" www.example.com:web/software/my-cool-app/appcast.xml\n\nfi";
-		};
-		92C6F8841261E15500E1259F /* Delete Old Binary */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Delete Old Binary";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "rm -r \"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.app\"";
+			shellScript = "exit\n\nif [ $BUILD_STYLE = Distribution ]; then\nset -o errexit\n\n[ $BUILD_STYLE = Distribution ] || { echo Distribution target requires \"'Distribution'\" build style; false; }\n\nVERSION=$(defaults read \"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Info\" CFBundleVersion)\nDOWNLOAD_BASE_URL=\"http://graph.tk/app\"\nRELEASENOTES_URL=\"http://url3.tk/mbapp/\"\nARCHIVE_FILENAME=\"$PROJECT_NAME $VERSION.zip\"\nDOWNLOAD_URL=\"$DOWNLOAD_BASE_URL/$ARCHIVE_FILENAME\"\nKEYCHAIN_PRIVKEY_NAME=\"Sparkle Private Key 1\"\n\nWD=$PWD\ncd \"$BUILT_PRODUCTS_DIR\"\nrm -f \"$PROJECT_NAME\"*.zip\nditto -ck --keepParent \"$PROJECT_NAME.app\" \"$ARCHIVE_FILENAME\"\n\nSIZE=$(stat -f %z \"$ARCHIVE_FILENAME\")\nPUBDATE=$(LC_TIME=en_US date +\"%a, %d %b %G %T %z\")\nSIGNATURE=$(\n\topenssl dgst -sha1 -binary < \"$ARCHIVE_FILENAME\" \\\n\t| openssl dgst -dss1 -sign <(security find-generic-password -g -s \"$KEYCHAIN_PRIVKEY_NAME\" 2>&1 1>/dev/null | perl -pe '($_) = /\"(.+)\"/; s/\\\\012/\\n/g' | perl -MXML::LibXML -e 'print XML::LibXML->new()->parse_file(\"-\")->findvalue(q(//string[preceding-sibling::key[1] = \"NOTE\"]))') \\\n\t| openssl enc -base64\n)\n\n[ $SIGNATURE ] || { echo Unable to load signing private key with name \"'$KEYCHAIN_PRIVKEY_NAME'\" from keychain; false; }\n\ncat|pbcopy <<EOF\n\t\t<item>\n\t\t\t<title>Version $VERSION</title>\n\t\t\t<sparkle:releaseNotesLink>$RELEASENOTES_URL</sparkle:releaseNotesLink>\n\t\t\t<pubDate>$PUBDATE</pubDate>\n\t\t\t<enclosure\n\t\t\t\turl=\"$DOWNLOAD_URL\"\n\t\t\t\tsparkle:version=\"$VERSION\"\n\t\t\t\ttype=\"application/octet-stream\"\n\t\t\t\tlength=\"$SIZE\"\n\t\t\t\tsparkle:dsaSignature=\"$SIGNATURE\"\n\t\t\t/>\n\t\t</item>\nEOF\n\n\n\ncat <<EOF\n\t\t<item>\n\t\t\t<title>Version $VERSION</title>\n\t\t\t<sparkle:releaseNotesLink>$RELEASENOTES_URL</sparkle:releaseNotesLink>\n\t\t\t<pubDate>$PUBDATE</pubDate>\n\t\t\t<enclosure\n\t\t\t\turl=\"$DOWNLOAD_URL\"\n\t\t\t\tsparkle:version=\"$VERSION\"\n\t\t\t\ttype=\"application/octet-stream\"\n\t\t\t\tlength=\"$SIZE\"\n\t\t\t\tsparkle:dsaSignature=\"$SIGNATURE\"\n\t\t\t/>\n\t\t</item>\nEOF\necho put above into http://url3.tk/mbapp/?update\n\nopen http://url3.tk/mbapp/?update\n\necho Uploading to graph.tk server...\n\nKEYCHAIN_FTP_USERNAME_NAME=\"graph.tk username\"\nKEYCHAIN_FTP_PASSWORD_NAME=\"graph.tk password\"\n\n\n\nFTPU=$(security find-generic-password -g -s \"$KEYCHAIN_FTP_USERNAME_NAME\" 2>&1 1>/dev/null | perl -pe '($_) = /\"(.+)\"/; s/\\\\012/\\n/g' | perl -MXML::LibXML -e 'print XML::LibXML->new()->parse_file(\"-\")->findvalue(q(//string[preceding-sibling::key[1] = \"NOTE\"]))')\n\nFTPP=$(security find-generic-password -g -s \"$KEYCHAIN_FTP_PASSWORD_NAME\" 2>&1 1>/dev/null | perl -pe '($_) = /\"(.+)\"/; s/\\\\012/\\n/g' | perl -MXML::LibXML -e 'print XML::LibXML->new()->parse_file(\"-\")->findvalue(q(//string[preceding-sibling::key[1] = \"NOTE\"]))')\n\n\n\nFTPS=\"graph.tk\" # remote ftp server\nFTPF=\"/public_html/app/\" # remote ftp server directory for $FTPU & $FTPP\nLOCALD=\"$ARCHIVE_FILENAME\"\nncftpput -m -u $FTPU -p $FTPP $FTPS  $FTPF \"$LOCALD\"\necho Uploaded.\n\n\n\n\n\n\n#echo cd \"\\\"$PWD\\\"\"\n#echo \"$HOME/Sites/upload.sh\" \"\\\"$ARCHIVE_FILENAME\\\"\"\n#echo scp \"'$HOME/svn/my-cool-app/build/Release/$ARCHIVE_FILENAME'\" www.example.com:download/\n#echo scp \"'$WD/appcast.xml'\" www.example.com:web/software/my-cool-app/appcast.xml\n\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -351,6 +489,17 @@
 				256AC3DA0F4B6AC300CF3369 /* Bigpond_Menu_BarAppDelegate.m in Sources */,
 				927CB2D9126163C40024DAD1 /* LoginItemsAE.c in Sources */,
 				927CB2DE126163DE0024DAD1 /* UsageMeter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924560FD1262D2EB00300612 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924560FE1262D2EB00300612 /* main.m in Sources */,
+				924560FF1262D2EB00300612 /* Bigpond_Menu_BarAppDelegate.m in Sources */,
+				924561001262D2EB00300612 /* LoginItemsAE.c in Sources */,
+				924561011262D2EB00300612 /* UsageMeter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +525,63 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9245610C1262D2EB00300612 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)\\\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Bigpond_Menu_Bar_Prefix.pch;
+				INFOPLIST_FILE = "Bigpond_Menu_Bar-Info copy.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "Bigpond Menu Bar";
+			};
+			name = Debug;
+		};
+		9245610D1262D2EB00300612 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)\\\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Bigpond_Menu_Bar_Prefix.pch;
+				INFOPLIST_FILE = "Bigpond_Menu_Bar-Info copy.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "Bigpond Menu Bar";
+			};
+			name = Release;
+		};
+		9245610E1262D2EB00300612 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)\\\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Bigpond_Menu_Bar_Prefix.pch;
+				INFOPLIST_FILE = "Bigpond_Menu_Bar-Info copy.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "Bigpond Menu Bar";
+			};
+			name = Distribution;
+		};
 		927CB45512616A390024DAD1 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -504,6 +710,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9245610B1262D2EB00300612 /* Build configuration list for PBXNativeTarget "Bigpond Menu Bar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9245610C1262D2EB00300612 /* Debug */,
+				9245610D1262D2EB00300612 /* Release */,
+				9245610E1262D2EB00300612 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		927CB4871261706B0024DAD1 /* Build configuration list for PBXAggregateTarget "Sign, Upload and Push" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -514,7 +730,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Bigpond Menu Bar" */ = {
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Bigpond Menu Bar Debug" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4B08A954540054247B /* Debug */,
