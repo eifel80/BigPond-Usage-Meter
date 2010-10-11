@@ -298,7 +298,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /usr/bin/ruby;
-			shellScript = "#!/usr/bin/ruby\n# xcode-git-cfbundleversion.rb\n# Update CFBundleVersion in Info.plist file with short Git revision string\n# http://github.com/digdog/xcode-git-cfbundleversion/\n#\n# This is based on\n# http://github.com/jsallis/xcode-git-versioner\n# http://github.com/juretta/iphone-project-tools/tree/v1.0.3\n\n# Fail if not run from Xcode\nraise \"Must be run from Xcode's Run Script Build Phase\" unless ENV['XCODE_VERSION_ACTUAL']\n\n# Get the current git revision hash\nrevision = `/usr/local/bin/git rev-parse --short HEAD`.chomp!\n\nif (revision)\n    # Update Info.plist file\n    plistFile = \"#{ENV['BUILT_PRODUCTS_DIR']}/#{ENV['INFOPLIST_PATH']}\"\n\n    # Convert the binary plist to xml based\n    #`/usr/bin/plutil -convert xml1 #{plistFile}`\n\n    # Open Info.plist and set the CFBundleVersion value to the \"CFBuildVersion (revision hash)\" format\n    lines = IO.readlines(plistFile).join\n    lines.gsub!(/(<key>CFBundleVersion<\\/key>\\n\\t<string>)(\\d+\\.\\d+)(<\\/string>)/, \"\\\\1\\\\2 (#{revision})\\\\3\")\n\n    # Overwrite the original Info.plist file with our updated version\n    File.open(plistFile, 'w') {|f| f.puts lines}\n\n    # Convert back to binary plist\n    #`/usr/bin/plutil -convert binary1 #{plistFile}`\n\n    # Report to the user\n    puts \"CFBundleVersion has revision number #{revision} in #{plistFile}\"\nend";
+			shellScript = "";
 		};
 		927CB47312616ECA0024DAD1 /* Set Version */ = {
 			isa = PBXShellScriptBuildPhase;
