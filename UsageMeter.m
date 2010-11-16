@@ -190,8 +190,8 @@ NSMutableArray *js_used, *js_date,*js_unmetered,*js_upload,*js_download;
 		}
 		
 		//Debug mode
-		//[data release];
-		//data = [[NSString alloc] initWithContentsOfFile:@"/debug/other.html"];
+		[data release];
+		data = [[NSString alloc] initWithContentsOfFile:@"/debug/new.html"];
 		
 		if(!data){
 			return @"No Data";
@@ -220,149 +220,241 @@ NSMutableArray *js_used, *js_date,*js_unmetered,*js_upload,*js_download;
 		foundRange = [data rangeOfString:@"<td nowrap=\"nowrap\" style=\"vertical-align:bottom\">Current Usage Allowance:</td>"];
 		if (foundRange.location == NSNotFound)
 		{
-			if((usecookie==0))
-			{
-				usecookie=1;
-				SEL theRenderSelector = @selector(allHeaderFields:);
-				if([resp respondsToSelector:theRenderSelector])
-				{
-					NSDictionary * allH;
-					if(allH=[resp allHeaderFields]) {
-						NSArray * call = [NSHTTPCookie cookiesWithResponseHeaderFields:allH forURL:[NSURL URLWithString:@"https://signon.bigpond.com/"]];
-						if(call.count>=2) {
-							NSString *cookie1=[[call objectAtIndex:0] value];
-							NSString *cookie2=[[call objectAtIndex:1] value];
-							
-							cookiealls=[NSString stringWithFormat:@"BIGipServerpl_bpraa_auth_gw_http=%@; JSESSIONID=%@",cookie2,cookie1];
-							dataloaded=0;
-							[data release];
-							goto tryagainbutthisisslower;
-						}
-					}
-				}
-			}
-			
-			//NSLog(@"Wrong response data: %@",data);
-			[data release];
-			return @"Wrong Response";
-			//return [NSString stringWithFormat:@"Wrong Response\n\n\n----------BEGIN RESPONSE----------------%@-------------END RESPONSE-----------",data];
+			//New usage meter page (16 Nov 2010)
+			foundRange = [data rangeOfString:@"<th>Monthly Plan Allowance:</th><td>"];
+			NSString *top;
+			NSString *bacctype;
+			NSString *acctype;
 			
 			
+			top=[data substringFromIndex:foundRange.location+foundRange.length];
+			acctype = [top substringToIndex:[top rangeOfString:@"B"].location];
 			
+			bacctype=acctype;
+			acctype=[[[bacctype stringByReplacingOccurrencesOfString:@"T" withString:@"000000"] stringByReplacingOccurrencesOfString:@"G" withString:@"000"] stringByReplacingOccurrencesOfString:@"M" withString:@""];
 			
-		}
-		NSString *top;
-		NSString *bacctype;
-		NSString *acctype;
+			//itotoal: Monthly Plan Allowance. (MB)
+			itotoal=[[acctype stringByReplacingOccurrencesOfString:@" " withString:@""] intValue];
 		
+			//NSRange table_begin=[top rangeOfString:@"<table class=\"usage bottom_margin\">"]; (there is rubbish around here)
+			NSRange table_begin=[top rangeOfString:@"</thead>"];
+			NSRange table_end = [top rangeOfString:@"<div  id=\"usagenotes\" class=\"content terms\">" options:NSLiteralSearch range:NSMakeRange(table_begin.location, [top length]-table_begin.location)];
+			NSString * table=[top substringWithRange:NSMakeRange(table_begin.location, table_end.location-table_begin.location)];
+			
 		
-		top=[data substringFromIndex:foundRange.location+96];
-		bacctype=[top substringWithRange:NSMakeRange([top rangeOfString:@">"].location+1, 50)];
-		acctype = [bacctype substringToIndex:[bacctype rangeOfString:@"B"].location];
-		
-		bacctype=acctype;
-		acctype=[[[bacctype stringByReplacingOccurrencesOfString:@"T" withString:@"000000"] stringByReplacingOccurrencesOfString:@"G" withString:@"000"] stringByReplacingOccurrencesOfString:@"M" withString:@""];
-		itotoal=[[acctype stringByReplacingOccurrencesOfString:@" " withString:@""] intValue];
-		index = [top rangeOfString:@"<tr bgcolor=\"#CDE1F1\">"];
-		if(index.length==0){
-			index = [top rangeOfString:@"onchange=\"this.form.submit();\"><option  selected=\"selected\""];
-		}
-		all = [top substringFromIndex:index.location+index.length];
-		
-		NSString * table = [all substringToIndex:[all rangeOfString:@"</table>"].location];
-		NSRange st=[table rangeOfString:@"<table"];
-		unsigned long dayv2=0;
-		if(st.length!=0){
-			table=[table substringFromIndex:st.location+6];
-			table=[table substringFromIndex:[table rangeOfString:@">"].location+1];
-			dayv2=1;
-		}
-		
+			
 #ifdef JSON
-		NSArray * days = [table componentsSeparatedByString:@"<tr"];
-		
-		NSEnumerator * nenumerator = [days objectEnumerator];
-		NSString *today;
-		
-		js_used=[[NSMutableArray alloc] init];
-		js_date=[[NSMutableArray alloc] init];
-		js_unmetered=[[NSMutableArray alloc] init];
-		js_upload=[[NSMutableArray alloc] init];
-		js_download=[[NSMutableArray alloc] init];
-		unsigned long dc=0;
-		while(today = [nenumerator nextObject]){
-			if((!dayv2) || (dayv2 && (dc>1)))
-			{
-				NSRange rr=[today rangeOfString:@"<td"];
-				if(rr.length==0){
-					break;
+			
+			if(0){//THIS CODE WILL NOT WORK
+				  //It has not been updated. table, can be splitted into rows by "<tr" however. I think the first entry will be nothing.
+				
+				
+				
+			NSArray * days = [table componentsSeparatedByString:@"<tr"];
+			
+			NSEnumerator * nenumerator = [days objectEnumerator];
+			NSString *today;
+			
+			js_used=[[NSMutableArray alloc] init];
+			js_date=[[NSMutableArray alloc] init];
+			js_unmetered=[[NSMutableArray alloc] init];
+			js_upload=[[NSMutableArray alloc] init];
+			js_download=[[NSMutableArray alloc] init];
+			unsigned long dc=0;
+			while(today = [nenumerator nextObject]){
+				if((!dayv2) || (dayv2 && (dc>1)))
+				{
+					NSRange rr=[today rangeOfString:@"<td"];
+					if(rr.length==0){
+						break;
+					}
+					
+					NSString *_ta = [today substringFromIndex:rr.location];
+					_ta = [_ta substringFromIndex:[_ta rangeOfString:@">"].location+1];
+					NSArray  *_tp = [_ta componentsSeparatedByString:@"<td"];
+					NSString *_tn = [[_tp objectAtIndex:0] substringToIndex: ( [[_tp objectAtIndex:0] rangeOfString:@"</"].location  )    ];
+					if([_tn isEqualToString:@"<strong>Total"]){
+						break;
+					}
+					[js_date addObject:_tn];
+					NSString *toend=[[_tp objectAtIndex:2] substringToIndex: ( [[_tp objectAtIndex:2] rangeOfString:@"</"].location  )    ];
+					toend=[toend substringFromIndex:[toend rangeOfString:@">"].location+1];
+					toend=[toend stringByReplacingOccurrencesOfString:@"-" withString:@"0"];
+					[js_download addObject:toend];
+					toend=[[_tp objectAtIndex:3] substringToIndex: ( [[_tp objectAtIndex:3] rangeOfString:@"</"].location  )    ];
+					toend=[toend substringFromIndex:[toend rangeOfString:@">"].location+1];
+					toend=[toend stringByReplacingOccurrencesOfString:@"-" withString:@"0"];
+					[js_upload addObject:toend];
+					
+					toend=[[_tp objectAtIndex:4] substringToIndex: ( [[_tp objectAtIndex:4] rangeOfString:@"</"].location  )    ];
+					toend=[toend substringFromIndex:[toend rangeOfString:@">"].location+1];
+					toend=[toend stringByReplacingOccurrencesOfString:@"-" withString:@"0"];
+					[js_used addObject:toend];
+					
+					toend=[[_tp objectAtIndex:5] substringToIndex: ( [[_tp objectAtIndex:5] rangeOfString:@"</"].location  )    ];
+					toend=[toend substringFromIndex:[toend rangeOfString:@">"].location+1];
+					toend=[toend stringByReplacingOccurrencesOfString:@"&nbsp;" withString:@""];
+					toend=[toend stringByReplacingOccurrencesOfString:@"-" withString:@"0"];
+					[js_unmetered addObject:toend];
+					
 				}
-				
-				NSString *_ta = [today substringFromIndex:rr.location];
-				_ta = [_ta substringFromIndex:[_ta rangeOfString:@">"].location+1];
-				NSArray  *_tp = [_ta componentsSeparatedByString:@"<td"];
-				NSString *_tn = [[_tp objectAtIndex:0] substringToIndex: ( [[_tp objectAtIndex:0] rangeOfString:@"</"].location  )    ];
-				if([_tn isEqualToString:@"<strong>Total"]){
-					break;
-				}
-				[js_date addObject:_tn];
-				NSString *toend=[[_tp objectAtIndex:2] substringToIndex: ( [[_tp objectAtIndex:2] rangeOfString:@"</"].location  )    ];
-				toend=[toend substringFromIndex:[toend rangeOfString:@">"].location+1];
-				toend=[toend stringByReplacingOccurrencesOfString:@"-" withString:@"0"];
-				[js_download addObject:toend];
-				toend=[[_tp objectAtIndex:3] substringToIndex: ( [[_tp objectAtIndex:3] rangeOfString:@"</"].location  )    ];
-				toend=[toend substringFromIndex:[toend rangeOfString:@">"].location+1];
-				toend=[toend stringByReplacingOccurrencesOfString:@"-" withString:@"0"];
-				[js_upload addObject:toend];
-				
-				toend=[[_tp objectAtIndex:4] substringToIndex: ( [[_tp objectAtIndex:4] rangeOfString:@"</"].location  )    ];
-				toend=[toend substringFromIndex:[toend rangeOfString:@">"].location+1];
-				toend=[toend stringByReplacingOccurrencesOfString:@"-" withString:@"0"];
-				[js_used addObject:toend];
-				
-				toend=[[_tp objectAtIndex:5] substringToIndex: ( [[_tp objectAtIndex:5] rangeOfString:@"</"].location  )    ];
-				toend=[toend substringFromIndex:[toend rangeOfString:@">"].location+1];
-				toend=[toend stringByReplacingOccurrencesOfString:@"&nbsp;" withString:@""];
-				toend=[toend stringByReplacingOccurrencesOfString:@"-" withString:@"0"];
-				[js_unmetered addObject:toend];
-				
+				dc++;
 			}
-			dc++;
-		}
+			}
 #endif
-		index = [all rangeOfString:@">"];
-		b = [all substringWithRange:NSMakeRange(index.location+1, 3)];
-		ibillstart=[[b stringByReplacingOccurrencesOfString:@" " withString:@""] intValue];
-		index=[all rangeOfString:@"<td nowrap=\"nowrap\"><strong>Total</strong></td>"];
-		int likels=0;
-		if(index.length==0){
-			likels=1;
-			index=[all rangeOfString:@"<td class=\"tdLeftNoWrap\"><strong>Total</strong></td>"];
+			
+			index = [table rangeOfString:@"<th scope=\"row\" class=\"a_left\">"];
+			b = [table substringWithRange:NSMakeRange(index.location+index.length, 3)];
+			ibillstart=[[b stringByReplacingOccurrencesOfString:@" " withString:@""] intValue];
+			index=[top rangeOfString:@"<strong class=\"blue\">Total</strong>"];
+			int likels=0;
+			if(index.length==0){
+				likels=1;
+				//This code will not work
+				index=[top rangeOfString:@"<td class=\"tdLeftNoWrap\"><strong>Total</strong></td>"];
+			}
+			
+			NSString *bused = [top substringWithRange:NSMakeRange(index.location+index.length,200)];
+			
+			
+			//this just skips through to the right column, which is the TOTAL BILLED USAGE,
+			int boldfontbegin=[bused rangeOfString:@"<b>"].location+3;
+			int boldfontend=[bused rangeOfString:@"</b>"].location;
+			bused = [bused substringWithRange:NSMakeRange(boldfontbegin, boldfontend-boldfontbegin)];
+
+			iused=[[bused stringByReplacingOccurrencesOfString:@" " withString:@""] intValue];
+			
+			
+			billingstart=ibillstart;
+			_used=iused;
+			_total=itotoal;
+			if(dataloaded){
+				[data release];
+			}
+			return @"";
+			
+			
+			//end new usage meter page
 		}
-		
-		NSString *bused = [all substringFromIndex:index.location+index.length];
-		
-		
-		//this just skips through to the right column, which is the TOTAL BILLED USAGE,
-		index=[bused rangeOfString:@"<td"];bused = [bused substringFromIndex:index.location+index.length];
-		index=[bused rangeOfString:@"<td"];bused = [bused substringFromIndex:index.location+index.length];
-		index=[bused rangeOfString:@"<td"];bused = [bused substringFromIndex:index.location+index.length];
-		index=[bused rangeOfString:@"<td"];bused = [bused substringWithRange:NSMakeRange(index.location+index.length,50)];
-		
-		index=[bused rangeOfString:@"</"];
-		int x=[bused rangeOfString:@">"].location+1;
-		NSString *used = [bused substringWithRange:NSMakeRange(x, index.location-x)];
-		used=[used stringByReplacingOccurrencesOfString:@"<strong>" withString:@""];
-		iused=[[used stringByReplacingOccurrencesOfString:@" " withString:@""] intValue];
-		
-		
-		billingstart=ibillstart;
-		_used=iused;
-		_total=itotoal;
-		if(dataloaded){
-			[data release];
+		else {
+			
+			//old usage meter page. Many people still have this.
+			NSString *top;
+			NSString *bacctype;
+			NSString *acctype;
+			
+			
+			top=[data substringFromIndex:foundRange.location+96];
+			bacctype=[top substringWithRange:NSMakeRange([top rangeOfString:@">"].location+1, 50)];
+			acctype = [bacctype substringToIndex:[bacctype rangeOfString:@"B"].location];
+			
+			bacctype=acctype;
+			acctype=[[[bacctype stringByReplacingOccurrencesOfString:@"T" withString:@"000000"] stringByReplacingOccurrencesOfString:@"G" withString:@"000"] stringByReplacingOccurrencesOfString:@"M" withString:@""];
+			itotoal=[[acctype stringByReplacingOccurrencesOfString:@" " withString:@""] intValue];
+			index = [top rangeOfString:@"<tr bgcolor=\"#CDE1F1\">"];
+			if(index.length==0){
+				index = [top rangeOfString:@"onchange=\"this.form.submit();\"><option  selected=\"selected\""];
+			}
+			all = [top substringFromIndex:index.location+index.length];
+			
+			NSString * table = [all substringToIndex:[all rangeOfString:@"</table>"].location];
+			NSRange st=[table rangeOfString:@"<table"];
+			unsigned long dayv2=0;
+			if(st.length!=0){
+				table=[table substringFromIndex:st.location+6];
+				table=[table substringFromIndex:[table rangeOfString:@">"].location+1];
+				dayv2=1;
+			}
+			
+#ifdef JSON
+			NSArray * days = [table componentsSeparatedByString:@"<tr"];
+			
+			NSEnumerator * nenumerator = [days objectEnumerator];
+			NSString *today;
+			
+			js_used=[[NSMutableArray alloc] init];
+			js_date=[[NSMutableArray alloc] init];
+			js_unmetered=[[NSMutableArray alloc] init];
+			js_upload=[[NSMutableArray alloc] init];
+			js_download=[[NSMutableArray alloc] init];
+			unsigned long dc=0;
+			while(today = [nenumerator nextObject]){
+				if((!dayv2) || (dayv2 && (dc>1)))
+				{
+					NSRange rr=[today rangeOfString:@"<td"];
+					if(rr.length==0){
+						break;
+					}
+					
+					NSString *_ta = [today substringFromIndex:rr.location];
+					_ta = [_ta substringFromIndex:[_ta rangeOfString:@">"].location+1];
+					NSArray  *_tp = [_ta componentsSeparatedByString:@"<td"];
+					NSString *_tn = [[_tp objectAtIndex:0] substringToIndex: ( [[_tp objectAtIndex:0] rangeOfString:@"</"].location  )    ];
+					if([_tn isEqualToString:@"<strong>Total"]){
+						break;
+					}
+					[js_date addObject:_tn];
+					NSString *toend=[[_tp objectAtIndex:2] substringToIndex: ( [[_tp objectAtIndex:2] rangeOfString:@"</"].location  )    ];
+					toend=[toend substringFromIndex:[toend rangeOfString:@">"].location+1];
+					toend=[toend stringByReplacingOccurrencesOfString:@"-" withString:@"0"];
+					[js_download addObject:toend];
+					toend=[[_tp objectAtIndex:3] substringToIndex: ( [[_tp objectAtIndex:3] rangeOfString:@"</"].location  )    ];
+					toend=[toend substringFromIndex:[toend rangeOfString:@">"].location+1];
+					toend=[toend stringByReplacingOccurrencesOfString:@"-" withString:@"0"];
+					[js_upload addObject:toend];
+					
+					toend=[[_tp objectAtIndex:4] substringToIndex: ( [[_tp objectAtIndex:4] rangeOfString:@"</"].location  )    ];
+					toend=[toend substringFromIndex:[toend rangeOfString:@">"].location+1];
+					toend=[toend stringByReplacingOccurrencesOfString:@"-" withString:@"0"];
+					[js_used addObject:toend];
+					
+					toend=[[_tp objectAtIndex:5] substringToIndex: ( [[_tp objectAtIndex:5] rangeOfString:@"</"].location  )    ];
+					toend=[toend substringFromIndex:[toend rangeOfString:@">"].location+1];
+					toend=[toend stringByReplacingOccurrencesOfString:@"&nbsp;" withString:@""];
+					toend=[toend stringByReplacingOccurrencesOfString:@"-" withString:@"0"];
+					[js_unmetered addObject:toend];
+					
+				}
+				dc++;
+			}
+#endif
+			index = [all rangeOfString:@">"];
+			b = [all substringWithRange:NSMakeRange(index.location+1, 3)];
+			ibillstart=[[b stringByReplacingOccurrencesOfString:@" " withString:@""] intValue];
+			index=[all rangeOfString:@"<td nowrap=\"nowrap\"><strong>Total</strong></td>"];
+			int likels=0;
+			if(index.length==0){
+				likels=1;
+				index=[all rangeOfString:@"<td class=\"tdLeftNoWrap\"><strong>Total</strong></td>"];
+			}
+			
+			NSString *bused = [all substringFromIndex:index.location+index.length];
+			
+			
+			//this just skips through to the right column, which is the TOTAL BILLED USAGE,
+			index=[bused rangeOfString:@"<td"];bused = [bused substringFromIndex:index.location+index.length];
+			index=[bused rangeOfString:@"<td"];bused = [bused substringFromIndex:index.location+index.length];
+			index=[bused rangeOfString:@"<td"];bused = [bused substringFromIndex:index.location+index.length];
+			index=[bused rangeOfString:@"<td"];bused = [bused substringWithRange:NSMakeRange(index.location+index.length,50)];
+			
+			index=[bused rangeOfString:@"</"];
+			int x=[bused rangeOfString:@">"].location+1;
+			NSString *used = [bused substringWithRange:NSMakeRange(x, index.location-x)];
+			used=[used stringByReplacingOccurrencesOfString:@"<strong>" withString:@""];
+			iused=[[used stringByReplacingOccurrencesOfString:@" " withString:@""] intValue];
+			
+			
+			billingstart=ibillstart;
+			_used=iused;
+			_total=itotoal;
+			if(dataloaded){
+				[data release];
+			}
+			return @"";
+			
 		}
-		return @"";
+
+		
 	}
 	@catch(NSException * theException){
 		return [NSString stringWithFormat:@"ERR%@",[theException reason]];
