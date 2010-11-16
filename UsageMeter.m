@@ -190,8 +190,8 @@ NSMutableArray *js_used, *js_date,*js_unmetered,*js_upload,*js_download;
 		}
 		
 		//Debug mode
-		[data release];
-		data = [[NSString alloc] initWithContentsOfFile:@"/debug/new.html"];
+		//[data release];
+		//data = [[NSString alloc] initWithContentsOfFile:@"/debug/new.html"];
 		
 		if(!data){
 			return @"No Data";
