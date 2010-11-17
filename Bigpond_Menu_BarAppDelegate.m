@@ -593,6 +593,10 @@ UsageMeter *meter;
 		if(debugMode){
 			NSLog(@"Password was equal to nil");
 		}
+		[window makeKeyAndOrderFront:self];
+		[userLabel setStringValue:@"<nobody>"];
+		[self showLogin:self];
+		
 		return new;
 	}
 	
