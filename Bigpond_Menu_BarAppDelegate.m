@@ -118,13 +118,6 @@ CFIndex lastcheckStartupIndexFound=-1;
 	[items release];
 	return NO;
 }
-- (NSString *)stringWithFSRef:(const FSRef *)aFSRef
-{
-	NSURL *theURL = (NSURL *)CFURLCreateFromFSRef(kCFAllocatorDefault,aFSRef);
-	NSString* thePath = [theURL path];
-	[theURL release];
-	return thePath;
-}
 
 - (BOOL)getFSRef:(FSRef *)aFSRef forString:(NSString *)string{
 	return FSPathMakeRef((const UInt8 *)[string UTF8String], aFSRef,NULL) == noErr;
@@ -315,6 +308,9 @@ CFIndex lastcheckStartupIndexFound=-1;
 	}
 	
 	
+	//FIX THIS
+	
+	
 	/*if(passwordCache){
 	 [passwordCache dealloc];
 	 passwordCache=nil;
@@ -405,9 +401,7 @@ CFIndex lastcheckStartupIndexFound=-1;
 	if([username isEqualToString:@""]){
 		return nil;
 	}
-	/*if(passwordCache){
-	 return passwordCache;
-	 }*/
+	
 	UInt32 passwordLength;
 	char * passwordData;
 	char * accountName=(char *)[username UTF8String];
@@ -430,7 +424,15 @@ CFIndex lastcheckStartupIndexFound=-1;
 													NULL
 													);
 	NSString *password=@"";
+	
+	
+	
 	if(err==kSecurityErrorNotFound){
+		[self receiveError:@"kSecurityErrorNotFound: Line 431"];
+		 [window makeKeyAndOrderFront:self];
+		 [userLabel setStringValue:@"<nobody>"];
+		 [self showLogin:self];
+		
 		return nil;
 		//the keychain item does not exist
 	}
@@ -442,6 +444,9 @@ CFIndex lastcheckStartupIndexFound=-1;
 	} else {
 		if(passwordData){
 			password=[NSString stringWithUTF8String:passwordData];
+			if(password==nil){
+				[self receiveError:@"NSString UTF8String is nil! line 448"];
+			}
 			SecKeychainItemFreeContent(NULL,passwordData);
 		}
 	}
@@ -477,6 +482,7 @@ CFIndex lastcheckStartupIndexFound=-1;
 	}
 	return username;
 }
+/*
 - (NSString *) getCommandLine{
 	NSString *username=nil;
 	NSString *password=nil;
@@ -506,6 +512,7 @@ CFIndex lastcheckStartupIndexFound=-1;
 			[password stringByReplacingOccurrencesOfString:@" " withString:@"\\ "]
 			];
 }
+ */
 - (IBAction) receiveError:(NSString *)errorString{
 	
 	/*
@@ -529,11 +536,6 @@ CFIndex lastcheckStartupIndexFound=-1;
 	if([error isEqualToString:@"Please Login"]){
 		[window makeKeyAndOrderFront:self];
 		[userLabel setStringValue:@"<nobody>"];
-		[self showLogin:self];
-	} else if([error isEqualToString:@"NOT AFFILIATED WITH BIGPOND OR TELSTRA IN ANY WAY."]){
-		error = @"Password is Empty";
-		[window makeKeyAndOrderFront:self];
-		[userLabel setStringValue:@"<blank>"];
 		[self showLogin:self];
 	}else if([error isEqualToString:@"Could Not Connect"]){
 		[statusItem setImage:[NSImage imageNamed:kImageResourceFadedIcon]];
@@ -587,16 +589,16 @@ UsageMeter *meter;
 	new.time=0;
 	
 	NSString *username=[self getUsername];
+	if(username==nil){
+		
+		return new;
+	}
 	NSString *password=[self getPasswordForUsername:username];
 	if(password==nil){
 		
 		if(debugMode){
 			NSLog(@"Password was equal to nil");
 		}
-		[window makeKeyAndOrderFront:self];
-		[userLabel setStringValue:@"<nobody>"];
-		[self showLogin:self];
-		
 		return new;
 	}
 	
@@ -620,6 +622,7 @@ UsageMeter *meter;
 - (usageInfo) getInfo{
 	
 	return [self getInfoInternal];
+	/*
 	usageInfo new;
 	
 	new.download=0;
@@ -688,6 +691,7 @@ UsageMeter *meter;
 		return new;
 	}
 	return new;
+	 */
 }
 - (BOOL) _doupdate:(id)sender{
 	//do not call this function directly, call update;
