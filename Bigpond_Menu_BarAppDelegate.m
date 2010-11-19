@@ -451,7 +451,9 @@ CFIndex lastcheckStartupIndexFound=-1;
 				if(password==nil){
 					[self receiveError:@"NSString stringWithCString is nil. line 451"];
 					
-					[self receiveError:[NSString stringWithFormat:@"NSString stringWithCString is nil! line 453. password @ %d, passwordData @ %d",password,passwordData]];
+					[self receiveError:[NSString stringWithFormat:@"NSString stringWithCString is nil! line 453. password @ %d, passwordData @ %d. Will attempt to display passwordData with percent s.",password,passwordData]];
+					[self receiveError:[NSString stringWithFormat:@"passwordData: %s",passwordData]];
+					
 				}
 			}
 			SecKeychainItemFreeContent(NULL,passwordData);
