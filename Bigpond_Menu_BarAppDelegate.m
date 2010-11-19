@@ -445,7 +445,14 @@ CFIndex lastcheckStartupIndexFound=-1;
 		if(passwordData){
 			password=[NSString stringWithUTF8String:passwordData];
 			if(password==nil){
-				[self receiveError:@"NSString UTF8String is nil! line 448"];
+				
+				[self receiveError:@"Using deprecated stringWithCString instead of stringWithUTF8String. Will continue anyway."];
+				password=[NSString stringWithCString:passwordData];
+				if(password==nil){
+					[self receiveError:@"NSString stringWithCString is nil. line 451"];
+					
+					[self receiveError:[NSString stringWithFormat:@"NSString stringWithCString is nil! line 453. password @ %d, passwordData @ %d",password,passwordData]];
+				}
 			}
 			SecKeychainItemFreeContent(NULL,passwordData);
 		}
