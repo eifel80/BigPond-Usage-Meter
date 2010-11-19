@@ -443,6 +443,9 @@ CFIndex lastcheckStartupIndexFound=-1;
 		
 	} else {
 		if(passwordData){
+			/*
+			 
+			 This code is wrong because passwordData is not null terminated!
 			password=[NSString stringWithUTF8String:passwordData];
 			if(password==nil){
 				
@@ -456,6 +459,9 @@ CFIndex lastcheckStartupIndexFound=-1;
 					
 				}
 			}
+			 */
+			password=[[NSString alloc] initWithBytes:passwordData length:passwordLength encoding:NSUTF8StringEncoding];
+			
 			SecKeychainItemFreeContent(NULL,passwordData);
 		}
 	}
