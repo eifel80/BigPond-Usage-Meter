@@ -117,7 +117,9 @@ NSMutableArray *js_used, *js_date,*js_unmetered,*js_upload,*js_download;
 	
 	NSString * data;
 	
+
 	@try{
+
 		if([username isEqualToString:@"example@bigpond.com"]){
 			return @"Please Login";
 		}
@@ -220,6 +222,13 @@ NSMutableArray *js_used, *js_date,*js_unmetered,*js_upload,*js_download;
 		foundRange = [data rangeOfString:@"<td nowrap=\"nowrap\" style=\"vertical-align:bottom\">Current Usage Allowance:</td>"];
 		if (foundRange.location == NSNotFound)
 		{
+			foundRange = [data rangeOfString:@"<title>503 Service Temporarily Unavailable</title>"];
+			if (foundRange.location != NSNotFound)
+			{
+				[data release];
+				return @"Service Temporarily Unavailable";
+				
+			}
 			//New usage meter page (16 Nov 2010)
 			foundRange = [data rangeOfString:@"<th>Monthly Plan Allowance:</th><td>"];
 			NSString *top;
@@ -453,8 +462,6 @@ NSMutableArray *js_used, *js_date,*js_unmetered,*js_upload,*js_download;
 			return @"";
 			
 		}
-
-		
 	}
 	@catch(NSException * theException){
 		return [NSString stringWithFormat:@"ERR%@",[theException reason]];
