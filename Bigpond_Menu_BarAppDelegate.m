@@ -460,7 +460,10 @@ CFIndex lastcheckStartupIndexFound=-1;
 				}
 			}
 			 */
-			password=[[NSString alloc] initWithBytes:passwordData length:passwordLength encoding:NSUTF8StringEncoding];
+			NSString *releaseme=[[NSString alloc] initWithBytes:passwordData length:passwordLength encoding:NSUTF8StringEncoding];
+			
+			password=[NSString stringWithString:releaseme];
+			[releaseme release];
 			
 			SecKeychainItemFreeContent(NULL,passwordData);
 		}
