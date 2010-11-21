@@ -1,3 +1,12 @@
+//From: http://developer.apple.com/mac/library/samplecode/LoginItemsAE/listing1.html
+
+//ANTHONY
+#if __LP64__
+#define typeShortInteger typeSInt16
+#define typeLongInteger typeSInt32
+
+#endif
+
 /*
  File:		LoginItemsAE.c
  
@@ -106,7 +115,17 @@ static OSStatus LaunchSystemEvents(ProcessSerialNumber *psnPtr)
             
             err = LSOpenApplication(&appParams, psnPtr);
         } else {
-            FSSpec				appSpec;
+            //FSSpec				appSpec;
+			//ANTHONY
+			
+#if __LP64__
+			FSRef					appSpec;/*launchAppRef*/
+			FSRef					parentRef;
+#else
+			FSSpec					appSpec;
+			
+#endif
+			
             LaunchParamBlockRec lpb;
             
             // Do it the compatible way on earlier systems.
@@ -118,14 +137,23 @@ static OSStatus LaunchSystemEvents(ProcessSerialNumber *psnPtr)
             // FSRef version of Launch Application.
             
             if (err == noErr) {
-                err = FSGetCatalogInfo(&appRef, kFSCatInfoNone, NULL, NULL, &appSpec, NULL);
+#if __LP64__
+                err = FSGetCatalogInfo(&appRef, kFSCatInfoNone, NULL, NULL, NULL, &parentRef);
+#else
+				err = FSGetCatalogInfo(&appRef, kFSCatInfoNone, NULL, NULL, &appSpec, NULL);
+				
+#endif
             }
             if (err == noErr) {
                 memset(&lpb, 0, sizeof(lpb));
                 lpb.launchBlockID      = extendedBlock;
                 lpb.launchEPBLength    = extendedBlockLen;
                 lpb.launchControlFlags = launchContinue | launchNoFileFlags;
-                lpb.launchAppSpec      = &appSpec;
+#if __LP64__
+                lpb.launchAppRef      = &appSpec;
+#else
+				lpb.launchAppSpec      = &appSpec;
+#endif
                 
                 err = LaunchApplication(&lpb);
             }
@@ -489,14 +517,14 @@ static OSStatus SendEventToSystemEventsWithParameters(
 	AppleEvent			target;
 	AppleEvent			event;
 	AppleEvent			localReply;
-	AEDescList			results;
-	
+	//AEDescList			results; Value stored to 'results' is never read!
+	 
 	assert( (reply == NULL) || (reply->descriptorType == typeNull) );
 	
 	target = kAENull;
 	event = kAENull;
 	localReply = kAENull;
-    results = kAENull;
+    //results = kAENull;
 	
 	// Create Apple event.
 	

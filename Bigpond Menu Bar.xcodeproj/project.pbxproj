@@ -26,6 +26,8 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		926C21AC12994796008513FB /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926C21AB12994796008513FB /* Carbon.framework */; };
+		926C2201129949D9008513FB /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926C2200129949D9008513FB /* CoreServices.framework */; };
 		927CB2C2126163470024DAD1 /* BigPond.icns in Resources */ = {isa = PBXBuildFile; fileRef = 927CB2C1126163470024DAD1 /* BigPond.icns */; };
 		927CB2D4126163BA0024DAD1 /* bp.png in Resources */ = {isa = PBXBuildFile; fileRef = 927CB2D1126163BA0024DAD1 /* bp.png */; };
 		927CB2D5126163BA0024DAD1 /* fade.png in Resources */ = {isa = PBXBuildFile; fileRef = 927CB2D2126163BA0024DAD1 /* fade.png */; };
@@ -66,6 +68,8 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Bigpond_Menu_Bar-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Bigpond_Menu_Bar-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Bigpond Menu Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bigpond Menu Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		926C21AB12994796008513FB /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		926C2200129949D9008513FB /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		927CB2C1126163470024DAD1 /* BigPond.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = BigPond.icns; sourceTree = "<group>"; };
 		927CB2D1126163BA0024DAD1 /* bp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bp.png; sourceTree = "<group>"; };
 		927CB2D2126163BA0024DAD1 /* fade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fade.png; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				927CB33D1261646C0024DAD1 /* Security.framework in Frameworks */,
 				927CB45912616B0F0024DAD1 /* Sparkle.framework in Frameworks */,
+				926C21AC12994796008513FB /* Carbon.framework in Frameworks */,
+				926C2201129949D9008513FB /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +179,8 @@
 			children = (
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+				926C21AB12994796008513FB /* Carbon.framework */,
+				926C2200129949D9008513FB /* CoreServices.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
