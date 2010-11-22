@@ -128,7 +128,6 @@ NSMutableArray *js_used, *js_date,*js_unmetered,*js_upload,*js_download;
 		NSData		*postData;
 		
 		
-		int usecookie=0;
 	tryagainbutthisisslower:
 		
 		post = [NSString stringWithFormat:@"username=%@&password=%@&goto=%@&encoded=false&gx_charset=UTF-8",
@@ -152,9 +151,6 @@ NSMutableArray *js_used, *js_date,*js_unmetered,*js_upload,*js_download;
 		[request setValue:@"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_2; en-us) AppleWebKit/531.21.8 (KHTML, like Gecko) Version/4.0.4 Safari/531.21.10 UsageMeterDataUpdater/1.1" forHTTPHeaderField:@"User-Agent"];
 		[request setHTTPShouldHandleCookies:YES];
 		
-		if((usecookie)) {
-			[request setValue:cookiealls forHTTPHeaderField:@"Cookie"];
-		}
 		
 		[request setValue:postLength forHTTPHeaderField:@"Content-Length"];
 		[request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
@@ -166,6 +162,7 @@ NSMutableArray *js_used, *js_date,*js_unmetered,*js_upload,*js_download;
 		
 		NSData *response = [NSURLConnection sendSynchronousRequest: request returningResponse: &resp error: &err];
 		if(!response){
+			return [NSString stringWithFormat:@"Could Not Connect: %@",[err localizedDescription]];
 			return @"Could Not Connect";
 		}
 		if(!resp){

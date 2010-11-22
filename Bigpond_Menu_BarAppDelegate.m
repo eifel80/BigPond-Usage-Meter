@@ -556,7 +556,8 @@ CFIndex lastcheckStartupIndexFound=-1;
 		[window makeKeyAndOrderFront:self];
 		[userLabel setStringValue:@"<nobody>"];
 		[self showLogin:self];
-	}else if([error isEqualToString:@"Could Not Connect"]){
+	}else if([error isEqualToString:@"Could Not Connect: This computer’s Internet connection appears to be offline."]){
+		error=@"Connection appears to be offline";
 		[statusItem setImage:[NSImage imageNamed:kImageResourceFadedIcon]];
 	}
 	else if([error isEqualToString:@"Wrong Password"]){
