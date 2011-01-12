@@ -35,7 +35,7 @@
 	<key>SUEnableSystemProfiling</key>
 	<false/>
 	<key>SUFeedURL</key>
-	<string>http://url3.tk/mbappcast.php</string>
+	<string>http://aantthony.github.com/BigPond-Usage-Meter/appcast.xml</string>
 	<key>SUPublicDSAKeyFile</key>
 	<string>dsa_pub.pem</string>
 	<key>SUScheduledCheckInterval</key>
