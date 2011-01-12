@@ -96,8 +96,9 @@ function m(n){
 
 	<p>It works on Leopard and Snow Leopard.</p>
 	<div style="text-align:center"><a href="http://cloud.github.com/downloads/aantthony/BigPond-Usage-Meter/Bigpond%20Menu%20Bar%201.5%20(e192c66).zip" onclick="m(3);pageTracker._trackPageview('dl/bmb_1_3.dmg.zip')" class="download"></a></div>
-	
-	<p>This is version 1.5 (e192c66)</p>
+	{% for post in site.posts limit:1 %}
+	<p><span>{{ post.title }}</span> &raquo; <a href="{{ post.url }}">Release Notes</a></p>
+    {% endfor %}
 	<a href="http://github.com/aantthony/BigPond-Usage-Meter">Source code on GitHub</a><br />
 	<a href="javascript:m(2)">Terms and Conditions</a><br /><br />
 	
