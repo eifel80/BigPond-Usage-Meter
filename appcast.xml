@@ -1,0 +1,40 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns="http://www.w3.org/2005/Atom" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+	<link href="http://aantthony.github.com/BigPond-Usage-Meter/appcast.xml" rel="self"/>
+	<link href="http://aantthony.github.com/BigPond-Usage-Meter/" />
+	<description>Bigpond Usage Meter Menu Bar App Feed</description>
+	<language>en</language>
+	<category>Software</category>
+    <id>http://aantthony.github.com/BigPond-Usage-Meter/</id>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+	<generator>url3.tk UpdateMan (unpublished appfeed) v0.0 Pre-Release, Jekyll, GitHub</generator>
+		<image>
+		<url>http://aantthony.github.com/BigPond-Usage-Meter/a6b5be9ae18ab708f8e60c94179da8e6f096a686.png</url>
+		<link>http://aantthony.github.com/BigPond-Usage-Meter/</link>
+		<title>Bigpond Usage Meter Menu Bar App Feed</title>
+	</image>
+	<title>BigPond Usage Meter</title>
+    {% for post in site.posts %}
+    <item>
+		<title></title>
+				<link href="http://aantthony.github.com/BigPond-Usage-Meter{{ post.url }}"/>
+				<sparkle:releaseNotesLink>http://aantthony.github.com/BigPond-Usage-Meter{{ post.url }}</sparkle:releaseNotesLink>
+				<pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+                <updated>{{ post.date | date_to_xmlschema }}</updated>
+                <content type="html">{{ post.content | xml_escape }}</content>
+				<description type="html">{{ post.content | xml_escape }}</description>
+				<enclosure
+					url="{{ post.file }}"
+					sparkle:version="1"
+					type="application/octet-stream"
+					length="{{ post.length }}"
+					sparkle:dsaSignature="{{ post.dsaSignature }}"
+					/>
+	</item>
+    {% endfor %}
+</channel>
+</rss>
