@@ -296,7 +296,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "if [ $BUILD_STYLE = Distribution ]; then\n\t/usr/local/bin/git commit -a -m \"Distribution Build\";/usr/local/bin/git push;\nfi";
+			shellScript = "if [ $BUILD_STYLE = Distribution ]; then\n\t/usr/local/bin/git commit -a -m \"Distribution Build\";\n\t/usr/local/bin/git push;\nfi";
 			showEnvVarsInLog = 0;
 		};
 		927CB47312616ECA0024DAD1 /* Set Version */ = {
