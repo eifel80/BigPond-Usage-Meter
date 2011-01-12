@@ -29,7 +29,7 @@ layout: nil
 				<description type="html">{{ post.content | xml_escape }}</description>
 				<enclosure
 					url="{{ post.file }}"
-					sparkle:version="1"
+					sparkle:version="{{ post.version }}"
 					type="application/octet-stream"
 					length="{{ post.filesize }}"
 					sparkle:dsaSignature="{{ post.dsaSignature }}"
