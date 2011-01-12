@@ -1,0 +1,53 @@
+TSign, Upload and Push
+v7
+r0
+t316531304.173498
+cCheck dependencies
+cPhaseScriptExecution Commit "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Distribution/Sign, Upload and Push.build/Script-924560ED1262D29100300612.sh"
+cPhaseScriptExecution "Sign, Upload and Push" "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Distribution/Sign, Upload and Push.build/Script-927CB47C1261706A0024DAD1.sh"
+
+N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Distribution/Sign, Upload and Push.build/Script-924560ED1262D29100300612.sh
+c000000004D2DAAD00000000000000089
+t1294838480
+s137
+
+N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Distribution/Sign, Upload and Push.build/Script-927CB47C1261706A0024DAD1.sh
+c000000004D2DAAD000000000000007CE
+t1294838480
+s1998
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies316531280#316531280#0(0"0(0#1#0"8607481536#0"0#
+
+CPhaseScriptExecution "Sign, Upload and Push" "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Distribution/Sign, Upload and Push.build/Script-927CB47C1261706A0024DAD1.sh"
+s316531288.904871
+e316531304.173387
+r0
+xPhaseScriptExecution
+xSign, Upload and Push
+x/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Distribution/Sign, Upload and Push.build/Script-927CB47C1261706A0024DAD1.sh
+oNo local changes to save
+oSwitched to branch 'gh-pages'
+o[gh-pages 4fdddc9] publish 1.6 (56383ae)
+o 2 files changed, 10 insertions(+), 0 deletions(-)
+o create mode 100644 _posts/2011-01-13-56383ae.textile
+o create mode 100644 download/Bigpond Menu Bar 1.6 (56383ae).zip
+oTo git@github.com:aantthony/BigPond-Usage-Meter.git
+o   084ceb0..4fdddc9  gh-pages -> gh-pages
+oSwitched to branch 'master'
+oNo stash found.
+lSLF07#2@47"Run custom shell script 'Sign, Upload and Push'316531288#316531304#0(443"No local changes to saveSwitched to branch 'gh-pages'[gh-pages 4fdddc9] publish 1.6 (56383ae) 2 files changed, 10 insertions(+), 0 deletions(-) create mode 100644 _posts/2011-01-13-56383ae.textile create mode 100644 download/Bigpond Menu Bar 1.6 (56383ae).zipTo git@github.com:aantthony/BigPond-Usage-Meter.git   084ceb0..4fdddc9  gh-pages -> gh-pagesSwitched to branch 'master'No stash found.Command /bin/sh failed with exit code 111(13@25"No local changes to save316531292#0#25#0(1@0"0(13@30"Switched to branch 'gh-pages'316531293#25#30#0(1@0"0(13@41"[gh-pages 4fdddc9] publish 1.6 (56383ae)316531293#55#41#0(1@0"0(13@51" 2 files changed, 10 insertions(+), 0 deletions(-)316531293#96#51#0(1@0"0(13@54" create mode 100644 _posts/2011-01-13-56383ae.textile316531293#147#54#0(1@0"0(13@64" create mode 100644 download/Bigpond Menu Bar 1.6 (56383ae).zip316531293#201#64#0(1@0"0(13@52"To git@github.com:aantthony/BigPond-Usage-Meter.git316531303#265#52#0(1@0"0(13@42"   084ceb0..4fdddc9  gh-pages -> gh-pages316531303#317#42#0(1@0"0(13@28"Switched to branch 'master'316531304#359#28#0(1@0"0(13@16"No stash found.316531304#387#16#0(1@0"0(4@39"Command /bin/sh failed with exit code 1316531304#18446744073709551615#0#0(1@0"0(0#0#0"8608036672#241"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    /bin/sh -c "\"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Distribution/Sign, Upload and Push.build/Script-927CB47C1261706A0024DAD1.sh\""1#
+
+CPhaseScriptExecution Commit "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Distribution/Sign, Upload and Push.build/Script-924560ED1262D29100300612.sh"
+s316531280.924797
+e316531288.904631
+r1
+xPhaseScriptExecution
+xCommit
+x/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Distribution/Sign, Upload and Push.build/Script-924560ED1262D29100300612.sh
+o# On branch master
+onothing to commit (working directory clean)
+oEverything up-to-date
+lSLF07#2@32"Run custom shell script 'Commit'316531280#316531288#0(85"# On branch masternothing to commit (working directory clean)Everything up-to-date3(13@19"# On branch master316531281#0#19#0(1@0"0(13@44"nothing to commit (working directory clean)316531281#19#44#0(1@0"0(13@22"Everything up-to-date316531288#63#22#0(1@0"0(0#0#0"8607856704#241"    cd /Users/Anthony/Developer/Programs/BigPond-Usage-Meter    /bin/sh -c "\"/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Distribution/Sign, Upload and Push.build/Script-924560ED1262D29100300612.sh\""0#
+

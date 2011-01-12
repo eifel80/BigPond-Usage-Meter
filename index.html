@@ -96,7 +96,7 @@ function m(n){
 
 	<p>It works on Leopard and Snow Leopard.</p>
 	{% for post in site.posts limit:1 %}
-	<div style="text-align:center"><a href="http://aantthony.github.com/BigPond-Usage-Meter{{ post.file }}" onclick="m(3);pageTracker._trackPageview('dl/bigpond_mb.dmg.zip')" class="download"></a></div>
+	<div style="text-align:center"><a href="{{ post.file }}" onclick="m(3);pageTracker._trackPageview('dl/bigpond_mb.dmg.zip')" class="download"></a></div>
 	<p><span>{{ post.title }}</span> &raquo; <a href="http://aantthony.github.com/BigPond-Usage-Meter{{ post.url }}">Release Notes</a></p>
     {% endfor %}
 	<a href="http://github.com/aantthony/BigPond-Usage-Meter">Source code on GitHub</a><br />

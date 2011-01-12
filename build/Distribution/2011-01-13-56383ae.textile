@@ -1,0 +1,10 @@
+---
+layout: post
+title: Version 1.6 (56383ae)
+filesize: 671119
+dsaSignature: MCwCFGtcH6rIB7GQscL9MNx5IOWGmw8uAhR5ZdXeWuq9SwcXwr18NnUg2vdbMA==
+file: http://aantthony.github.com/BigPond-Usage-Meter/download/Bigpond Menu Bar 1.6 (56383ae).zip
+pubdate: Thu, 13 Jan 2011 00:21:29 +1100
+---
+
+No release notes provided.

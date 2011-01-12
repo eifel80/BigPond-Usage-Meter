@@ -1,0 +1,20 @@
+TSign, Upload and Push
+v7
+r1
+
+N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Sign, Upload and Push.build/Script-924560ED1262D29100300612.sh
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Sign, Upload and Push.build/Script-927CB47C1261706A0024DAD1.sh
+c00000000000000000000000000000000
+t2
+s0
+
+CPhaseScriptExecution "Sign, Upload and Push" "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Sign, Upload and Push.build/Script-927CB47C1261706A0024DAD1.sh"
+r0
+
+CPhaseScriptExecution Commit "/Users/Anthony/Developer/Programs/BigPond-Usage-Meter/build/Bigpond Menu Bar.build/Debug/Sign, Upload and Push.build/Script-924560ED1262D29100300612.sh"
+r0
+
