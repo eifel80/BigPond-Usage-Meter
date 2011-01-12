@@ -1,4 +1,0 @@
-10/05/16 1.2, widget: 2.2
-10/10/10 release source code: GPL
-16/11/10 1.3, added support for new page
-21/11/10 1.4, password null termination fix - finally
