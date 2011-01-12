@@ -23,7 +23,7 @@ layout: nil
 		<title>{{ post.title | xml_escape }}</title>
 				<link href="http://aantthony.github.com/BigPond-Usage-Meter{{ post.url }}"/>
 				<sparkle:releaseNotesLink>http://aantthony.github.com/BigPond-Usage-Meter{{ post.url }}</sparkle:releaseNotesLink>
-				<pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+				<pubDate>{{ post.pubdate }}</pubDate>
                 <updated>{{ post.date | date_to_xmlschema }}</updated>
                 <content type="html">{{ post.content | xml_escape }}</content>
 				<description type="html">{{ post.content | xml_escape }}</description>
