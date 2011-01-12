@@ -54,9 +54,9 @@ NSTimer *	updateTimer;
 NSString *	kBigpondConnect;
 
 NSString *	password_non_keychain		= @"";
-NSString *	kUpdateServer				= @"http://url3.tk/bpver.php";
-NSString *	kUpdateServerPage			= @"http://url3.tk/?p=bpmb";
-NSString *	kSoftwareLicencePage		= @"http://url3.tk/?p=mblicence";
+//NSString *kUpdateServer				= @"http://url3.tk/bpver.php";
+NSString *	kUpdateServerPage			= @"http://aantthony.github.com/BigPond-Usage-Meter/";
+NSString *	kSoftwareLicencePage		= @"http://aantthony.github.com/BigPond-Usage-Meter/licence.html";
 
 NSString *	kImageResourceDefaultIcon	= @"bp";
 NSString *	kImageResourceFadedIcon		= @"fade";
