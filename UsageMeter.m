@@ -123,7 +123,6 @@ NSMutableArray *js_used, *js_date,*js_unmetered,*js_upload,*js_download;
 		if([username isEqualToString:@"example@bigpond.com"]){
 			return @"Please Login";
 		}
-		NSString	*cookiealls=NULL;
 		NSString	*post;
 		NSData		*postData;
 		
