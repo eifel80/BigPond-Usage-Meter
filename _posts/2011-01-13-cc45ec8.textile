@@ -1,0 +1,10 @@
+---
+layout: post
+title: Version 1.6 (de2d70f)
+filesize: 671142
+dsaSignature: MCwCFGWuUrruJK6pla8dncxttbb9H+bQAhQhFKmvjLva+OOiGkPwx/xROrj6TQ==
+file: http://aantthony.github.com/BigPond-Usage-Meter/download/Bigpond Menu Bar 1.6 (de2d70f).zip
+pubdate: Thu, 13 Jan 2011 00:07:40 +1100
+---
+
+No release notes provided.
