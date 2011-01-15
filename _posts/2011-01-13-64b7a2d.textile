@@ -8,4 +8,5 @@ file: http://aantthony.github.com/BigPond-Usage-Meter/download/Bigpond Menu Bar 
 pubdate: Thu, 13 Jan 2011 00:37:25 +1100
 ---
 
-No release notes provided.
+Update server now hosted on github pages for relability.
+In-app links updated.
