@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
+    <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
+    <script type="text/javascript" src="attributes.js" charset="utf-8"></script>
+    <script type="text/javascript" src="CommandMonitor.js"></script>
+    <script type="text/javascript" src="main.js" charset="utf-8"></script>
+    <style type="text/css">
+    #titletxt
+    {
+        text-decoration:none;
+    }#titletxt:hover
+    {
+        text-decoration:underline;
+            }
+            #text3{
+                opacity:0;
+            -webkit-transition-property:opacity;-webkit-transition-duration: 0.2s;-webkit-transition-timing-function:ease-out;
+            text-shadow:black 0px 0px 2px;
+            
+            }
+            #text3:hover
+            {
+                opacity:1;
+            }
+    </style>
+</head>
+<body onload="load();">
+    <div id="front">
+        <div id="trayh" style="-webkit-transition-property:opacity,top;-webkit-transition-duration: 0.2s, 0.2s;-webkit-transition-timing-function:ease-out,ease-out">
+            <img style="position:absolute;top:0;left:0;" id="tray" src="Parts/Images/front%201.png" alt="">
+            <canvas id="canvas" width="294" height="115" onmousemove="mmv(event)" onmouseout="selte(event)" onmouseover="mmv(event)"></canvas>
+        </div>
+        <img id="frontImg" src="Parts/Images/front.png" alt="">
+        <div id="infobutton" class="info"></div>
+        <div id="usedtxt"></div>
+        <div id="btxt"></div>
+        <div id="freetxt"></div>
+        <div id="etxt"></div>
+        <div id="lasttxt"></div>
+        <div id="titletxt" onclick="openbig(event)"></div>
+        <div id="image"><img src="Images/b.png" id="inner_image1"></div>
+        <div style="webkit-transition-property:width;-webkit-transition-duration: 0.4s;-webkit-transition-timing-function:ease-out" id="b1"><img src="Images/g.png" id="inner_image"></div>
+        <div id="image1"><img src="Images/b.png" id="inner_image2"></div>
+        <div id="b2" style="webkit-transition-property:width;-webkit-transition-duration: 0.4s;-webkit-transition-timing-function:ease-out"><img src="Images/g.png" id="inner_image3"></div>
+        <div id="ind" style="webkit-transition-property:opacity;opacity:1;-webkit-transition-duration: 0.4s;-webkit-transition-timing-function:ease-out"><img src="Images/newajax.gif" id="inner_image4"></div>
+        <div id="infobutton1" class="info"></div>
+        <div id="text3"></div>
+    </div>
+    <div id="back">
+        <img id="backImg" src="Parts/Images/back.png" alt="">
+        <div id="done"></div>
+        <input id="username" type="text" name="password" value="">
+        <div id="text"></div>
+        <div id="text1"></div>
+        <input id="password" type="password" name="password" value="" onkeydown="passwordBTN(event)">
+        <div id="text4" style="text-decoration:underline" onclick="devsite(event)"></div>
+        <div id="text5"></div>
+        <div id="text6"></div>
+        <div id="text2" onclick="updsite(event)" style="text-decoration: underline;"></div>
+    </div>
+</body>
+</html>

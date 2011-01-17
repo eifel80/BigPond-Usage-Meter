@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowNetworkAccess</key>
+	<true/>
+	<key>AllowSystem</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDisplayName</key>
+	<string>Bigpond Usage Meter</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.usagemeter.widget.usagemeter</string>
+	<key>CFBundleName</key>
+	<string>Bigpond Usage Meter</string>
+	<key>CFBundleShortVersionString</key>
+	<string>3</string>
+	<key>CFBundleVersion</key>
+	<string>3</string>
+	<key>CloseBoxInsetX</key>
+	<integer>12</integer>
+	<key>CloseBoxInsetY</key>
+	<integer>13</integer>
+	<key>Height</key>
+	<integer>287</integer>
+	<key>MainHTML</key>
+	<string>main.html</string>
+	<key>Width</key>
+	<integer>347</integer>
+</dict>
+</plist>
